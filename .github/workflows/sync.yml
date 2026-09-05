@@ -1,0 +1,48 @@
+name: Sync public project registry
+
+on:
+  schedule:
+    - cron: "17 13 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/sync_public_projects.py
+      - .github/workflows/sync.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wiki-public-project-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Refresh public repository registry
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/sync_public_projects.py
+
+      - name: Commit registry changes
+        shell: bash
+        run: |
+          if git diff --quiet -- AUTO_PROJECTS.md; then
+            echo "Public repository registry is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add AUTO_PROJECTS.md
+          git commit -m "chore: sync public project registry"
+          git push
