@@ -57,6 +57,9 @@ def load_tree(root: Path) -> dict[str, dict[str, Any]]:
     if not root.exists():
         return out
     for path in sorted(root.rglob("*.md")):
+        # README files document the directory contract; they are not entities.
+        if path.name.lower() == "readme.md":
+            continue
         meta, body = parse_frontmatter(path)
         entity_id = meta["id"]
         if entity_id in out:
@@ -143,6 +146,13 @@ def build_combined(private_dir: Path) -> dict[str, Any]:
         raise OverlayError(
             "private-only entity ids collide with public entities; use overlays instead: "
             + ", ".join(collisions)
+        )
+
+    private_collisions = sorted(set(private_only) & set(overlays))
+    if private_collisions:
+        raise OverlayError(
+            "an id cannot be both a private-only entity and a public overlay: "
+            + ", ".join(private_collisions)
         )
 
     combined: dict[str, dict[str, Any]] = {
