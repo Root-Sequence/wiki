@@ -16,6 +16,18 @@ Each Root Sequence project can have a **generated project lens** that behaves li
 
 See [Wiki Architecture](ARCHITECTURE.md) for the full model.
 
+## Public + private layers
+
+`Root-Sequence/wiki` is the **public layer** of one logical Wiki.
+
+The intended companion, `Root-Sequence/wiki-private`, is a private overlay for private-only entities, unpublished canon, internal project relationships, private archaeology, and additional context for entities that already exist publicly.
+
+A private overlay reuses the same stable entity ID instead of creating a second conceptual identity. The private combined view may merge public + private knowledge; the public site consumes **only this public repository**.
+
+> **The public build is complete without the private repository. The private build may depend on the public repository, never the reverse.**
+
+See [Private Overlay](PRIVATE_OVERLAY.md) for the repository contract, merge semantics, and security boundary.
+
 ## Start here
 
 - [`entities/`](entities/) — canonical Wiki identities with explicit metadata, relationships, provenance, and project membership.
@@ -24,6 +36,7 @@ See [Wiki Architecture](ARCHITECTURE.md) for the full model.
 - [Projects](PROJECTS.md) — what each project does and where its canonical work lives.
 - [Live public repo registry](AUTO_PROJECTS.md) — machine-maintained discovery of public `Root-Sequence` repositories.
 - [Wiki Architecture](ARCHITECTURE.md) — one graph, many project lenses, and the intelligence model.
+- [Private Overlay](PRIVATE_OVERLAY.md) — how the public and private layers share identities without leaking private content.
 - [Provenance](PROVENANCE.md) — how we record whether a term is established, adapted, Rae-coined, jointly coined, uncertain, or otherwise sourced.
 - [Concept archaeology](ARCHAEOLOGY.md) — when an idea first appeared, what it used to be called, and how it changed.
 - [Seeds](SEEDS.md) — fragments that are not mature enough for a canonical project home yet.
@@ -66,6 +79,8 @@ Three complementary layers keep different kinds of knowledge current:
 
 Definitions, originality claims, private/public boundaries, and canon are intentionally **not** delegated to blind automation. See [Automation](AUTOMATION.md).
 
+The Pages workflow also runs a privacy-boundary check and fails if public CI is modified to consume the private companion repository or private merge tooling.
+
 ## What belongs here
 
 The wiki is useful when the question is:
@@ -89,6 +104,8 @@ capture → seed → working index entry → canonical entity → mature / retir
 
 Not every useful phrase needs an entity page. An entry should graduate when stable identity, explicit relationships, backlinks, provenance, or cross-project reuse make the richer structure useful.
 
+Visibility is orthogonal to maturity: an entity may be public, private-only, or publicly identified with additional private overlay context.
+
 ## Relationship to existing Root Sequence navigation
 
 This layer complements, rather than replaces:
@@ -102,4 +119,4 @@ The wiki should make those systems easier to enter, not duplicate them.
 
 ## Canonical home
 
-This repository is the canonical home of the Root Sequence Wiki. The earlier prototype under `Root-Sequence/root-sequence/wiki/` was migrated here on 2026-09-05.
+This repository is the canonical home of the **public layer** of the Root Sequence Wiki. The earlier prototype under `Root-Sequence/root-sequence/wiki/` was migrated here on 2026-09-05.
