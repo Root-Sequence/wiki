@@ -17,16 +17,18 @@ The generated registry is discovery infrastructure. [`PROJECTS.md`](PROJECTS.md)
 
 ### 2. Website and knowledge graph
 
-Every push to `main` rebuilds the site.
+Every push to `main` rebuilds the public site.
 
 `scripts/prepare_site.py`:
 
-- turns the root Markdown files into site pages without duplicating their source;
-- builds a graph from explicit wiki structure, project names, terms, phrases, and links;
+- turns the public root Markdown files into site pages without duplicating their source;
+- builds a graph from public canonical entities, explicit Wiki structure, project names, terms, phrases, and links;
 - emits the generated site source into `.site-src/`;
 - leaves the canonical Markdown files at repository root.
 
 The Pages workflow then builds and deploys that generated source.
+
+Before any public build, `scripts/check_public_boundary.py` verifies that the Pages workflow has not been modified to consume the private companion repository, a private overlay path, private Wiki credentials, or the private merge builder.
 
 ### 3. Project lenses
 
@@ -35,7 +37,8 @@ The Pages workflow then builds and deploys that generated source.
 A lens behaves like a sub-wiki but is **generated from shared entities** rather than maintained as a duplicate hierarchy. It may show:
 
 - the project's role and canonical home;
-- terms explicitly associated with it;
+- canonical entities assigned to it;
+- legacy terms explicitly associated with it;
 - phrases and motifs associated with it;
 - relevant Seeds;
 - cross-project overlap signals based on shared explicit references.
@@ -57,15 +60,42 @@ These signals simulate some useful behaviors of an "intelligent" knowledge syste
 
 ### 5. Conversation and agent capture
 
-GitHub cannot see ideas that exist only in a chat. A separate ChatGPT-side maintenance pass can review recent Root Sequence work and update the wiki when appropriate.
+GitHub cannot see ideas that exist only in a chat. A separate ChatGPT-side maintenance pass can review recent Root Sequence work and update the Wiki when appropriate.
 
 That pass should:
 
 - add clearly durable new terms, aliases, phrases, project relationships, and provenance evidence;
+- graduate durable material into one canonical `entities/` identity when richer metadata or cross-project reuse warrants it;
 - use `origin-unverified` whenever authorship is uncertain;
 - prefer `SEEDS.md` for material that is suggestive but not mature;
 - never expose private project content merely because the assistant can access it;
 - preserve one canonical substantive home and link to it rather than copying whole documents.
+
+Once `Root-Sequence/wiki-private` exists, private-only material should be routed there rather than captured in the public base.
+
+## Private overlay automation
+
+The intended private companion is `Root-Sequence/wiki-private`.
+
+Private merging is **opt-in** and must never be part of the public Pages workflow.
+
+`scripts/merge_private_overlay.py` may be run in a trusted private environment to combine:
+
+- public entities from `Root-Sequence/wiki/entities/`;
+- private-only entities from `wiki-private/entities/`;
+- additive overlays from `wiki-private/overlays/`.
+
+The merge tool:
+
+- uses stable entity IDs to avoid duplicate conceptual identities;
+- treats overlays as additive rather than silent rewrites of public provenance or definitions;
+- writes only under `.private-build/`;
+- refuses to emit combined private data elsewhere;
+- is not invoked by public CI.
+
+A future private build may generate private project lenses, backlinks, graph views, archaeology, and routing signals from the combined graph. Those outputs stay private unless deliberately promoted.
+
+See [`PRIVATE_OVERLAY.md`](PRIVATE_OVERLAY.md) for the full overlay contract.
 
 ## What should not be fully automated
 
@@ -74,6 +104,7 @@ Automation should **not** decide by itself that:
 - a phrase was invented here;
 - a speculative connection is established fact;
 - a private project should become public;
+- a private overlay field should be promoted to the public entity;
 - a seed has become canonical;
 - two concepts are equivalent simply because their wording is similar;
 - two projects are substantively related merely because they share a reference.
@@ -90,7 +121,8 @@ When work elsewhere in Root Sequence materially changes any of the following, th
 - a phrase or motif that has become structurally important;
 - provenance evidence;
 - a relationship among projects;
-- the retirement or replacement of older terminology.
+- the retirement or replacement of older terminology;
+- the visibility boundary of an entity or relationship.
 
 A useful rule is:
 
@@ -100,10 +132,18 @@ And for generated project views:
 
 > **Entities are canonical once; views are generated many times.**
 
+And for visibility:
+
+> **The public build is complete without the private repository. The private build may depend on the public repository, never the reverse.**
+
 See [`ARCHITECTURE.md`](ARCHITECTURE.md) for the wider one-Wiki-many-views model.
 
 ## Privacy boundary
 
 The automated GitHub registry deliberately queries public repositories only.
 
-Private projects may be mentioned in the curated Wiki when their public-safe existence or role has already been intentionally disclosed, but their repository contents are not an automatic publication source.
+Private projects may be mentioned in the curated public Wiki when their public-safe existence or role has already been intentionally disclosed, but their repository contents are not an automatic publication source.
+
+The public Pages workflow never checks out or reads `wiki-private`. Its CI boundary check fails if the workflow is changed to do so.
+
+If private context needs to augment a public identity, use a private overlay with the same stable `id`. If the identity itself is private, keep the entire entity in `wiki-private/entities/`.
