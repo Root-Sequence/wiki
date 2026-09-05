@@ -37,7 +37,7 @@ jobs:
       - name: Commit registry changes
         shell: bash
         run: |
-          if git diff --quiet -- AUTO_PROJECTS.md; then
+          if [[ -z "$(git status --porcelain -- AUTO_PROJECTS.md)" ]]; then
             echo "Public repository registry is already current."
             exit 0
           fi
