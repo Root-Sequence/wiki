@@ -1,0 +1,167 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f7f7f5;
+}
+
+.wy-nav-content,
+.container {
+  max-width: 1120px;
+}
+
+code,
+pre {
+  font-variant-ligatures: none;
+}
+
+table {
+  width: 100%;
+}
+
+.graph-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: end;
+  margin: 1rem 0;
+}
+
+.graph-controls label {
+  font-weight: 600;
+}
+
+.graph-controls input {
+  min-width: min(28rem, 80vw);
+  padding: 0.6rem 0.7rem;
+  border: 1px solid #b8b8b2;
+  border-radius: 0.35rem;
+  background: white;
+}
+
+.graph-controls button {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #9a9a94;
+  border-radius: 0.35rem;
+  background: white;
+  cursor: pointer;
+}
+
+#knowledge-graph {
+  min-height: 34rem;
+  border: 1px solid #c9c9c3;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: white;
+}
+
+#knowledge-graph svg {
+  display: block;
+  width: 100%;
+  min-height: 34rem;
+  touch-action: none;
+}
+
+.graph-edge {
+  stroke: #c4c4be;
+  stroke-width: 1.1;
+  opacity: 0.72;
+}
+
+.graph-node {
+  cursor: grab;
+  transition: opacity 120ms ease;
+}
+
+.graph-node:active {
+  cursor: grabbing;
+}
+
+.graph-node circle {
+  fill: #4d5965;
+  stroke: white;
+  stroke-width: 1.5;
+}
+
+.graph-node.kind-project circle {
+  fill: #3f6d58;
+}
+
+.graph-node.kind-term circle {
+  fill: #5c527a;
+}
+
+.graph-node.kind-phrase circle {
+  fill: #7b5b43;
+}
+
+.graph-node.kind-document circle {
+  fill: #2d485f;
+}
+
+.graph-node text {
+  font-size: 12px;
+  pointer-events: none;
+  fill: #222;
+  paint-order: stroke;
+  stroke: white;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+.graph-node:focus circle,
+.graph-node.graph-match circle {
+  stroke: #111;
+  stroke-width: 2.5;
+}
+
+.graph-dim {
+  opacity: 0.1;
+}
+
+.graph-detail {
+  margin: 1rem 0 2rem;
+  padding: 1rem 1.1rem;
+  border-left: 3px solid #6c6c66;
+  background: #efefeb;
+}
+
+.graph-detail h3 {
+  margin-top: 0;
+}
+
+.relation-label {
+  font-size: 0.85em;
+  opacity: 0.7;
+  margin-left: 0.35rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #161817;
+  }
+
+  #knowledge-graph,
+  .graph-controls input,
+  .graph-controls button {
+    background: #202321;
+    color: #ecece8;
+  }
+
+  #knowledge-graph,
+  .graph-controls input,
+  .graph-controls button {
+    border-color: #454943;
+  }
+
+  .graph-node text {
+    fill: #f2f2ee;
+    stroke: #202321;
+  }
+
+  .graph-detail {
+    background: #242724;
+    border-left-color: #8a8e87;
+  }
+}
