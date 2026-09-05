@@ -35,7 +35,7 @@ jobs:
       - name: Prepare generated site source
         run: |
           python scripts/prepare_site.py
-          cp PRIVATE_OVERLAY.md .site-src/private-overlay.md
+          cp PRIVATE_OVERLAY.md .site-src/PRIVATE_OVERLAY.md
 
       - name: Generate project lenses and Wiki signals
         run: python scripts/generate_project_lenses.py
