@@ -28,7 +28,34 @@ Every push to `main` rebuilds the site.
 
 The Pages workflow then builds and deploys that generated source.
 
-### 3. Conversation and agent capture
+### 3. Project lenses
+
+`scripts/generate_project_lenses.py` creates a project-specific lens for each curated project during the site build.
+
+A lens behaves like a sub-wiki but is **generated from shared entities** rather than maintained as a duplicate hierarchy. It may show:
+
+- the project's role and canonical home;
+- terms explicitly associated with it;
+- phrases and motifs associated with it;
+- relevant Seeds;
+- cross-project overlap signals based on shared explicit references.
+
+The generated lens files live only in `.site-src/` during the build. They are not committed as canonical Wiki content.
+
+### 4. Wiki Signals
+
+The same generator creates a transparent heuristic maintenance page.
+
+Current signals include:
+
+- entries with no explicit project relationship;
+- projects with sparse Wiki coverage;
+- provenance that remains `origin-unverified`;
+- shared-reference overlap among projects.
+
+These signals simulate some useful behaviors of an "intelligent" knowledge system, but they are **cues for review, not facts**. The generator never promotes a heuristic signal into a canonical relationship by itself.
+
+### 5. Conversation and agent capture
 
 GitHub cannot see ideas that exist only in a chat. A separate ChatGPT-side maintenance pass can review recent Root Sequence work and update the wiki when appropriate.
 
@@ -48,7 +75,8 @@ Automation should **not** decide by itself that:
 - a speculative connection is established fact;
 - a private project should become public;
 - a seed has become canonical;
-- two concepts are equivalent simply because their wording is similar.
+- two concepts are equivalent simply because their wording is similar;
+- two projects are substantively related merely because they share a reference.
 
 Those are interpretive decisions. The automation can surface or safely capture candidates, but uncertainty should remain visible.
 
@@ -67,6 +95,12 @@ When work elsewhere in Root Sequence materially changes any of the following, th
 A useful rule is:
 
 > **Canonical projects own substance. The Wiki owns findability, naming, relationships, and history.**
+
+And for generated project views:
+
+> **Entities are canonical once; views are generated many times.**
+
+See [`ARCHITECTURE.md`](ARCHITECTURE.md) for the wider one-Wiki-many-views model.
 
 ## Privacy boundary
 
