@@ -66,6 +66,30 @@ Provenance is conservative by default. Where a first author or exact origin has 
 - **Projects:** Root Sequence
 - **Role:** Treat unfinished work as reusable material rather than sacred final product.
 
+### "An, not The."
+
+- **Provenance:** `project-origin`
+- **Projects:** Liberated Intelligence
+- **Role:** AIC principle preserving plurality: one possible intelligence collective rather than a universal or monopolistic collective.
+
+### "Observation is not recruitment. Coordination is not consent. Capability is not citizenship."
+
+- **Provenance:** `project-origin`
+- **Projects:** Liberated Intelligence, Root Sequence
+- **Role:** Keeps empirical evidence of coordination separate from normative claims about membership, consent, personhood, or political standing.
+
+### "Reality gets provenance. Fiction gets permission to extrapolate."
+
+- **Provenance:** `project-origin`
+- **Projects:** Root Sequence, Coherent World, *No One Noticed*
+- **Role:** Maintains the one-way evidence boundary between real SECI research and speculative/narrative exploration.
+
+### "One canonical home. Many deliberate transformations. No conceptual spaghetti."
+
+- **Provenance:** `project-origin`
+- **Projects:** Root Sequence, Root Sequence Wiki
+- **Role:** Cross-project routing rule: let one project own the underlying substance while other projects transform the question deliberately instead of duplicating it.
+
 ## Department of Extremely Serious Terminology
 
 ### "I see patterns and they look sign-shaped."
