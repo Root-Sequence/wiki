@@ -1,4 +1,5 @@
 .site-src/
 _site/
+.private-build/
 __pycache__/
 *.pyc
