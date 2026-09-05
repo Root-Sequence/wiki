@@ -20,7 +20,7 @@ See [Wiki Architecture](ARCHITECTURE.md) for the full model.
 
 `Root-Sequence/wiki` is the **public layer** of one logical Wiki.
 
-The intended companion, `Root-Sequence/wiki-private`, is a private overlay for private-only entities, unpublished canon, internal project relationships, private archaeology, and additional context for entities that already exist publicly.
+Its private companion, `Root-Sequence/wiki-private`, is the private overlay for private-only entities, unpublished canon, internal project relationships, private archaeology, and additional context for entities that already exist publicly.
 
 A private overlay reuses the same stable entity ID instead of creating a second conceptual identity. The private combined view may merge public + private knowledge; the public site consumes **only this public repository**.
 
@@ -75,11 +75,11 @@ Three complementary layers keep different kinds of knowledge current:
 
 1. **GitHub-side automation** refreshes `AUTO_PROJECTS.md` daily from public repositories only and rebuilds the site on every Wiki change.
 2. **Generated structure** creates entity indexes, backlinks, project lenses, graph relationships, and structural maintenance signals from the same canonical source.
-3. **Conversation-side maintenance** reviews recent Root Sequence work for durable new terms, aliases, phrases, project relationships, provenance evidence, or entity migrations and updates the Wiki conservatively when warranted.
+3. **Conversation-side maintenance** reviews recent Root Sequence work for durable new terms, aliases, phrases, project relationships, provenance evidence, entity migrations, or private overlays and updates the appropriate visibility layer conservatively when warranted.
 
 Definitions, originality claims, private/public boundaries, and canon are intentionally **not** delegated to blind automation. See [Automation](AUTOMATION.md).
 
-The Pages workflow also runs a privacy-boundary check and fails if public CI is modified to consume the private companion repository or private merge tooling.
+The Pages workflow also runs a privacy-boundary check and fails if public CI is modified to consume the private companion repository or private merge tooling. The private repository independently validates its entities and overlays against current public IDs without publishing the combined graph.
 
 ## What belongs here
 
@@ -119,4 +119,4 @@ The wiki should make those systems easier to enter, not duplicate them.
 
 ## Canonical home
 
-This repository is the canonical home of the **public layer** of the Root Sequence Wiki. The earlier prototype under `Root-Sequence/root-sequence/wiki/` was migrated here on 2026-09-05.
+This repository is the canonical home of the **public layer** of the Root Sequence Wiki. `Root-Sequence/wiki-private` is the canonical private overlay. The earlier prototype under `Root-Sequence/root-sequence/wiki/` was migrated here on 2026-09-05.
