@@ -10,10 +10,14 @@ For example:
 
 ```text
 Root Sequence Wiki
-├── concepts
-├── terms
-├── phrases
-├── projects
+├── entities
+│    ├── concepts
+│    ├── motifs
+│    └── other durable identities
+├── indexes
+│    ├── lexicon
+│    ├── phrases
+│    └── projects
 ├── sources
 ├── people / influences
 ├── timelines / archaeology
@@ -29,17 +33,17 @@ Then project views are generated from that same graph:
 
 ```text
 Being Human(e) lens
-  → terms used by Being Human(e)
-  → phrases associated with it
+  → entities used by Being Human(e)
+  → legacy terms and phrases not yet migrated
   → relevant seeds
   → related projects
   → canonical repository
 
 No One Noticed lens
-  → concepts used in the story
+  → story-relevant entities
   → motifs and phrases
   → Coherent World relationships
-  → public-safe canon references
+  → public-safe references
   → canonical story/world homes
 ```
 
@@ -49,7 +53,7 @@ The lens does not own copies of those entries. It points at the same underlying 
 
 > **Entities are canonical once; views are generated many times.**
 
-A durable concept, project, phrase, source, or artifact should have one canonical Wiki identity. Project lenses, indexes, graph views, timelines, search results, and related-item lists are projections of that identity.
+A durable concept, motif, source, artifact, or other cross-project thing should have one canonical Wiki identity. Project lenses, indexes, graph views, timelines, search results, and related-item lists are projections of that identity.
 
 Sub-wikis therefore should not require duplicate directory scaffolding such as:
 
@@ -59,19 +63,68 @@ projects/no-one-noticed/concepts/empathy.md
 projects/community-infrastructure/concepts/empathy.md
 ```
 
-Instead there should eventually be one `empathy` entity with relationships to every project that uses or transforms it.
+Instead there is one entity with relationships to every project that uses or transforms it.
+
+## Hybrid migration model
+
+The entity layer is now active under `entities/`, but the Wiki does **not** require a disruptive big-bang migration.
+
+- `LEXICON.md` remains the compact term index.
+- `PHRASES.md` remains the compact phrase/motif index.
+- selected durable entries graduate into `entities/*.md` when richer metadata or relationships become useful;
+- an index may retain a one-line summary and link to the entity, which is indexing rather than duplicated scaffolding;
+- legacy entries continue working until migrated.
+
+The generator deduplicates entity-backed index entries in the graph and project lenses so one thing does not become multiple conceptual identities merely because it appears in several views.
+
+## Active entity model
+
+Canonical entity files use lightweight front matter such as:
+
+```yaml
+---
+id: concept:discoherence-propagation
+title: Discoherence Propagation
+slug: discoherence-propagation
+type: concept
+status: working
+provenance: origin-unverified
+provenance_confidence: low
+visibility: public
+projects:
+  - Root Sequence
+  - Universal Coherence Framework
+aliases: []
+related: []
+canonical: null
+first_known: unknown
+first_known_source: unknown
+---
+```
+
+The same metadata powers:
+
+- graph identity and explicit edges;
+- generated project lenses;
+- entity indexes;
+- backlinks and related-entity lists;
+- provenance and timeline data;
+- deterministic orphan/missing-metadata checks;
+- future routing and recommendation tools.
+
+Project names in `projects` match the curated labels in `PROJECTS.md`. `related` contains entity slugs, not duplicate file trees.
 
 ## Project repositories still own substance
 
 The Wiki organizes **knowledge about the ecosystem**. It does not absorb every project's working documents.
 
 - project repository → canonical argument, design, implementation, policy, canon, research, or archive record;
-- Wiki entity → name, short orientation, provenance, aliases, relationships, history, canonical link;
+- Wiki entity → identity, short orientation, provenance, aliases, relationships, history, canonical link;
 - project lens → generated view of Wiki entities relevant to one project.
 
 This keeps the Wiki useful without making it a second copy of the organization.
 
-## Three layers of "intelligence"
+## Three layers of “intelligence”
 
 The Wiki can feel increasingly intelligent without pretending a heuristic is understanding.
 
@@ -115,45 +168,24 @@ It should:
 - explain why a new relationship was added;
 - never infer authorship merely from conversational appearance.
 
-This is the closest layer to an "intelligent Wiki," but it remains accountable to explicit evidence and reversible edits.
+This is the closest layer to an “intelligent Wiki,” but it remains accountable to explicit evidence and reversible edits.
 
 ## Generated project lenses
 
-The website build creates project-specific lenses from the curated project index and explicit Wiki references.
+The website build creates project-specific lenses from the curated project index, canonical entity metadata, and conservative legacy matching.
 
-They are generated into the temporary site source and are **not committed as duplicate Markdown pages**.
+They are generated into the temporary site source and are **not committed as duplicate project-wiki Markdown trees**.
 
 A lens may show:
 
 - project role and canonical home;
-- terms that explicitly reference the project;
-- phrases and motifs that reference it;
+- canonical entities explicitly assigned to the project;
+- legacy terms or phrases that explicitly reference it;
 - relevant Seeds;
-- other projects that share those explicit references;
+- other projects sharing those references;
 - maintenance signals about missing or sparse coverage.
 
 This gives each project a sub-wiki-like experience while maintaining one underlying knowledge graph.
-
-## Future entity model
-
-As the Wiki matures, major entries should move from giant tables into individual entity files with lightweight front matter, for example:
-
-```yaml
-title: Discoherence Propagation
-type: concept
-status: working
-provenance: origin-unverified
-projects:
-  - root-sequence
-  - universal-coherence-framework
-related:
-  - coherence
-  - cascading-failure
-canonical: https://github.com/Root-Sequence/root-sequence/...
-visibility: public
-```
-
-The same metadata can power navigation, backlinks, project lenses, timelines, search, and graph edges.
 
 ## Organizational goal
 
