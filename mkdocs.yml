@@ -17,7 +17,7 @@ nav:
   - Knowledge Graph: graph.md
   - Wiki Signals: signals.md
   - Architecture: architecture.md
-  - Public + Private Layers: private-overlay.md
+  - Public + Private Layers: PRIVATE_OVERLAY.md
   - Provenance: provenance.md
   - Concept Archaeology: archaeology.md
   - Seeds: seeds.md
