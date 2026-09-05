@@ -14,7 +14,7 @@ aliases:
   - I see patterns and they look sign-shaped
 related: []
 canonical: null
-first_known: 2026-09-05
+first_known: "2026-09-05"
 first_known_source: conversation
 ---
 
