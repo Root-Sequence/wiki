@@ -65,6 +65,46 @@ projects/community-infrastructure/concepts/empathy.md
 
 Instead there is one entity with relationships to every project that uses or transforms it.
 
+## Visibility layers
+
+The Wiki has one logical graph with an asymmetric public/private architecture.
+
+```text
+Root-Sequence/wiki
+public base
+      │
+      ├── public entities
+      ├── public project lenses
+      ├── public graph
+      └── public site
+
+Root-Sequence/wiki-private
+private overlay
+      │
+      ├── private-only entities
+      ├── additive overlays for public entity IDs
+      ├── unpublished/private project context
+      └── private archaeology and seeds
+
+public + private
+      ↓
+private combined view
+```
+
+The central safety invariant is:
+
+> **The public build is complete without the private repository. The private build may depend on the public repository, never the reverse.**
+
+This means:
+
+- the public Pages workflow reads only `Root-Sequence/wiki`;
+- a private overlay may reuse a public entity's stable `id` to add private context;
+- private-only identities live only in `wiki-private`;
+- the private combined graph merges public + private data only in a trusted private environment;
+- public-safe stubs for private projects are allowed when their existence and broad role are intentionally public.
+
+See [`PRIVATE_OVERLAY.md`](PRIVATE_OVERLAY.md) for the overlay format and build boundary.
+
 ## Hybrid migration model
 
 The entity layer is now active under `entities/`, but the Wiki does **not** require a disruptive big-bang migration.
@@ -114,13 +154,16 @@ The same metadata powers:
 
 Project names in `projects` match the curated labels in `PROJECTS.md`. `related` contains entity slugs, not duplicate file trees.
 
+A private overlay uses the same `id` with additive metadata such as `projects_add`, `aliases_add`, and `related_add` rather than redefining the public entity.
+
 ## Project repositories still own substance
 
 The Wiki organizes **knowledge about the ecosystem**. It does not absorb every project's working documents.
 
 - project repository → canonical argument, design, implementation, policy, canon, research, or archive record;
 - Wiki entity → identity, short orientation, provenance, aliases, relationships, history, canonical link;
-- project lens → generated view of Wiki entities relevant to one project.
+- project lens → generated view of Wiki entities relevant to one project;
+- private overlay → additional private context without forking the public identity.
 
 This keeps the Wiki useful without making it a second copy of the organization.
 
@@ -140,7 +183,8 @@ Safe to generate automatically:
 - timelines from dated provenance;
 - orphan detection;
 - missing metadata;
-- public repository status.
+- public repository status;
+- private overlay merges in an explicitly private build.
 
 ### Layer 2: heuristic signals
 
@@ -155,6 +199,8 @@ Useful as **suggestions**, not facts:
 
 These should be labeled as signals or candidates rather than silently converted into canonical relationships.
 
+A private combined view can run the same heuristics over more context, but private-derived signals remain private unless intentionally promoted.
+
 ### Layer 3: agent-assisted synthesis
 
 A maintenance agent can review conversations, GitHub changes, and existing Wiki structure to propose or make conservative updates.
@@ -166,7 +212,8 @@ It should:
 - prefer linking over copying;
 - place immature ideas in Seeds;
 - explain why a new relationship was added;
-- never infer authorship merely from conversational appearance.
+- never infer authorship merely from conversational appearance;
+- route private-only knowledge to the private overlay once available rather than leaking it into the public base.
 
 This is the closest layer to an “intelligent Wiki,” but it remains accountable to explicit evidence and reversible edits.
 
@@ -187,6 +234,8 @@ A lens may show:
 
 This gives each project a sub-wiki-like experience while maintaining one underlying knowledge graph.
 
+A future private build may generate richer private project lenses from the combined public + private entity graph without altering the public lens source.
+
 ## Organizational goal
 
 The Wiki should increasingly answer questions such as:
@@ -199,5 +248,6 @@ The Wiki should increasingly answer questions such as:
 - What has changed recently?
 - What is underdeveloped or disconnected?
 - Where should a new idea probably go?
+- Is this relationship public, private, or public-with-private-context?
 
 The goal is not an omniscient database. It is a **self-indexing ecosystem that makes the next useful connection easier to see**.
