@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Generate project lenses and transparent heuristic Wiki signals.
+"""Generate project lenses and transparent Wiki maintenance signals.
 
-This script creates site-only views in .site-src/. It never creates duplicate
-canonical Wiki source files. Relationships are derived from explicit textual
-references plus a small alias map used only for matching.
+Canonical entities use explicit project metadata. Legacy index-only terms,
+phrases, and seeds may still use conservative textual matching until they are
+migrated. Generated lenses are site views, never duplicate source homes.
 """
 
 from __future__ import annotations
@@ -13,9 +13,12 @@ import shutil
 from collections import Counter, defaultdict
 from pathlib import Path
 
+import yaml
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / ".site-src"
 LENSES = OUT / "lenses"
+ENTITY_DIR = ROOT / "entities"
 
 ALIASES = {
     "Root Sequence": ["Root Sequence"],
@@ -29,6 +32,7 @@ ALIASES = {
     "No One Noticed": ["No One Noticed"],
     "Museum of Ordinary Life": ["Museum of Ordinary Life", "MoOL"],
     "Root Sequence Discussions": ["Root Sequence Discussions"],
+    "Root Sequence Wiki": ["Root Sequence Wiki", "Wiki"],
     "Good Chaos": ["Good Chaos"],
 }
 
@@ -47,6 +51,42 @@ def clean_label(value: str) -> str:
 def read(name: str) -> str:
     path = ROOT / name
     return path.read_text(encoding="utf-8") if path.exists() else ""
+
+
+def parse_front_matter(text: str) -> tuple[dict, str]:
+    if not text.startswith("---\n"):
+        return {}, text
+    end = text.find("\n---\n", 4)
+    if end == -1:
+        return {}, text
+    data = yaml.safe_load(text[4:end]) or {}
+    if not isinstance(data, dict):
+        data = {}
+    return data, text[end + 5 :]
+
+
+def load_entities() -> list[dict]:
+    entities: list[dict] = []
+    if not ENTITY_DIR.exists():
+        return entities
+    for path in sorted(ENTITY_DIR.glob("*.md")):
+        if path.name.lower() == "readme.md":
+            continue
+        meta, body = parse_front_matter(path.read_text(encoding="utf-8"))
+        if meta.get("visibility", "public") != "public":
+            continue
+        entities.append(
+            {
+                "kind": "entity",
+                "label": str(meta.get("title") or path.stem.replace("-", " ").title()),
+                "slug": str(meta.get("slug") or path.stem),
+                "text": body,
+                "source": f"../entities/{meta.get('slug') or path.stem}.md",
+                "projects": [str(p) for p in (meta.get("projects") or [])],
+                "provenance": str(meta.get("provenance") or "origin-unverified"),
+            }
+        )
+    return entities
 
 
 def table_rows(text: str, header_fragment: str) -> list[list[str]]:
@@ -110,35 +150,44 @@ def parse_projects() -> list[dict]:
 
 
 def parse_items() -> list[dict]:
-    items: list[dict] = []
+    entities = load_entities()
+    entity_slugs = {slugify(item["label"]) for item in entities} | {item["slug"] for item in entities}
+    items: list[dict] = list(entities)
 
     for cells in table_rows(read("LEXICON.md"), "| Term |"):
         if len(cells) < 4:
             continue
         label = clean_label(cells[0])
+        if slugify(label) in entity_slugs:
+            continue
         items.append({
             "kind": "term",
             "label": label,
             "text": " | ".join(cells),
             "source": "../lexicon.md",
+            "projects": [],
         })
 
     for item in heading_blocks(read("PHRASES.md")):
+        if slugify(item["label"]) in entity_slugs:
+            continue
         items.append({
             "kind": "phrase",
             "label": item["label"],
             "text": item["text"],
             "source": f"../phrases.md#{item['anchor']}",
+            "projects": [],
         })
 
     for item in heading_blocks(read("SEEDS.md")):
-        if item["label"].lower() == "name":
+        if item["label"].lower() == "name" or slugify(item["label"]) in entity_slugs:
             continue
         items.append({
             "kind": "seed",
             "label": item["label"],
             "text": item["text"],
             "source": f"../seeds.md#{item['anchor']}",
+            "projects": [],
         })
 
     return items
@@ -148,9 +197,7 @@ def matches_project(text: str, project: dict) -> bool:
     lowered = text.lower()
     for alias in project["aliases"]:
         a = alias.lower().strip()
-        if len(a) < 3:
-            continue
-        if a in lowered:
+        if len(a) >= 3 and a in lowered:
             return True
     return False
 
@@ -158,12 +205,20 @@ def matches_project(text: str, project: dict) -> bool:
 def build_memberships(projects: list[dict], items: list[dict]) -> tuple[dict, dict]:
     by_project: dict[str, list[dict]] = defaultdict(list)
     by_item: dict[int, list[dict]] = defaultdict(list)
+    project_lookup = {p["name"]: p for p in projects}
+
     for idx, item in enumerate(items):
-        haystack = f"{item['label']}\n{item['text']}"
-        for project in projects:
-            if matches_project(haystack, project):
-                by_project[project["name"]].append(item)
-                by_item[idx].append(project)
+        explicit = [project_lookup[p] for p in item.get("projects", []) if p in project_lookup]
+        if item["kind"] == "entity":
+            matches = explicit
+        else:
+            haystack = f"{item['label']}\n{item['text']}"
+            matches = [p for p in projects if matches_project(haystack, p)]
+
+        for project in matches:
+            by_project[project["name"]].append(item)
+            by_item[idx].append(project)
+
     return by_project, by_item
 
 
@@ -179,16 +234,17 @@ def write_lens(project: dict, related: list[dict], overlaps: Counter) -> None:
         "",
     ]
 
-    grouped = {"term": [], "phrase": [], "seed": []}
+    grouped = {"entity": [], "term": [], "phrase": [], "seed": []}
     for item in related:
         grouped[item["kind"]].append(item)
 
     section_names = {
-        "term": "Referenced terms",
+        "entity": "Canonical Wiki entities",
+        "term": "Legacy indexed terms",
         "phrase": "Phrases & motifs",
         "seed": "Relevant seeds",
     }
-    for kind in ("term", "phrase", "seed"):
+    for kind in ("entity", "term", "phrase", "seed"):
         lines.append(f"## {section_names[kind]}")
         lines.append("")
         if grouped[kind]:
@@ -245,7 +301,7 @@ def generate() -> None:
     index = [
         "# Project Lenses",
         "",
-        "Each project lens is generated from the same shared Wiki entities. This creates sub-wiki-like views **without duplicating source content**.",
+        "Each project lens is generated from the same shared Wiki entities and indexes. This creates sub-wiki-like views **without duplicating source content**.",
         "",
     ]
     for project in projects:
@@ -253,46 +309,66 @@ def generate() -> None:
         index.append(f"- [{project['name']}]({project['slug']}.md) — {count} explicit Wiki reference{'s' if count != 1 else ''}")
     (LENSES / "index.md").write_text("\n".join(index) + "\n", encoding="utf-8")
 
-    # Transparent heuristic maintenance signals.
-    item_projects = {}
-    for idx, item in enumerate(items):
-        item_projects[idx] = [p["name"] for p in by_item.get(idx, [])]
-
-    orphans = [items[i] for i, names in item_projects.items() if not names]
+    item_projects = {idx: [p["name"] for p in by_item.get(idx, [])] for idx in range(len(items))}
+    entity_orphans = [items[i] for i, names in item_projects.items() if not names and items[i]["kind"] == "entity"]
+    heuristic_orphans = [items[i] for i, names in item_projects.items() if not names and items[i]["kind"] != "entity"]
     low_coverage = [
         (p["name"], len(by_project.get(p["name"], [])))
         for p in projects
         if len(by_project.get(p["name"], [])) < 2
     ]
 
-    unknown_provenance = sum(1 for row in table_rows(read("LEXICON.md"), "| Term |") if len(row) >= 2 and "origin-unverified" in row[1])
+    legacy_unknown = sum(
+        1 for row in table_rows(read("LEXICON.md"), "| Term |")
+        if len(row) >= 2 and "origin-unverified" in row[1]
+    )
+    entity_unknown = sum(
+        1 for item in items
+        if item["kind"] == "entity" and item.get("provenance") == "origin-unverified"
+    )
 
     signal_lines = [
         "# Wiki Signals",
         "",
-        "> **Heuristic maintenance view.** These are transparent structural cues, not conclusions produced by an omniscient system.",
+        "> **Maintenance view.** Deterministic metadata checks and transparent heuristics appear here as prompts, not automatic conclusions.",
         "",
         "## Current structural signals",
         "",
-        f"- Lexicon entries marked `origin-unverified`: **{unknown_provenance}**",
-        f"- Wiki reference items with no explicit project match: **{len(orphans)}**",
-        f"- Curated projects with fewer than two explicit Wiki references: **{len(low_coverage)}**",
+        f"- Canonical entities: **{sum(1 for i in items if i['kind'] == 'entity')}**",
+        f"- Canonical entities with no project relationship: **{len(entity_orphans)}**",
+        f"- Legacy/seed items with no heuristic project match: **{len(heuristic_orphans)}**",
+        f"- Entity records marked `origin-unverified`: **{entity_unknown}**",
+        f"- Legacy Lexicon rows marked `origin-unverified`: **{legacy_unknown}**",
+        f"- Curated projects with fewer than two Wiki references: **{len(low_coverage)}**",
         "",
-        "## Orphan candidates",
+        "## Canonical entity orphans",
         "",
-        "An orphan may be perfectly valid. This list simply asks whether an explicit project relationship is missing.",
+        "These are deterministic metadata gaps: the entity currently names no curated project.",
         "",
     ]
-    if orphans:
-        for item in sorted(orphans, key=lambda x: (x["kind"], x["label"].lower()))[:40]:
+    if entity_orphans:
+        for item in sorted(entity_orphans, key=lambda x: x["label"].lower()):
+            signal_lines.append(f"- [{item['label']}]({item['source'].replace('../', '')})")
+    else:
+        signal_lines.append("No canonical entity orphans.")
+
+    signal_lines += [
+        "",
+        "## Heuristic orphan candidates",
+        "",
+        "These legacy entries may be perfectly valid. This list only asks whether an explicit relationship or entity migration is worth reviewing.",
+        "",
+    ]
+    if heuristic_orphans:
+        for item in sorted(heuristic_orphans, key=lambda x: (x["kind"], x["label"].lower()))[:40]:
             signal_lines.append(f"- **{item['label']}** ({item['kind']})")
     else:
-        signal_lines.append("No current orphan candidates.")
+        signal_lines.append("No current heuristic orphan candidates.")
 
     signal_lines += ["", "## Sparse project lenses", ""]
     if low_coverage:
         for name, count in sorted(low_coverage, key=lambda x: (x[1], x[0].lower())):
-            signal_lines.append(f"- [{name}](../lenses/{slugify(name)}.md) — {count} explicit reference{'s' if count != 1 else ''}")
+            signal_lines.append(f"- [{name}](lenses/{slugify(name)}.md) — {count} explicit reference{'s' if count != 1 else ''}")
     else:
         signal_lines.append("All project lenses currently have at least two explicit references.")
 
@@ -300,16 +376,12 @@ def generate() -> None:
         "",
         "## How to use this page",
         "",
-        "Treat these as prompts for review: add an explicit relationship if evidence supports it, leave the item alone if isolation is meaningful, or place uncertain connections in Seeds. The generator never canonicalizes these signals automatically.",
+        "Treat signals as review prompts: add metadata when evidence supports it, migrate durable legacy entries into entities when useful, leave meaningful isolation alone, and place uncertain connections in Seeds. The generator never canonicalizes a heuristic relationship automatically.",
         "",
     ]
     (OUT / "signals.md").write_text("\n".join(signal_lines), encoding="utf-8")
 
-    architecture = ROOT / "ARCHITECTURE.md"
-    if architecture.exists():
-        (OUT / "architecture.md").write_text(architecture.read_text(encoding="utf-8"), encoding="utf-8")
-
-    print(f"generated {len(projects)} project lenses and Wiki signals")
+    print(f"generated {len(projects)} project lenses from {len(items)} Wiki items")
 
 
 if __name__ == "__main__":
