@@ -26,7 +26,7 @@ first_known_source: unknown
 
 Use quoted ISO strings for known dates, for example `first_known: "2026-09-05"`, so metadata remains portable across YAML/JSON tooling.
 
-Before creating a public entity from material that originated privately, follow [`VISIBILITY.md`](VISIBILITY.md). Private-to-public movement is an explicit promotion decision; uncertain material stays private.
+Before creating a public entity from material that originated privately, follow the [Visibility Policy](https://github.com/Root-Sequence/wiki/blob/main/VISIBILITY.md). Private-to-public movement is an explicit promotion decision; uncertain material stays private.
 
 # Example
 
