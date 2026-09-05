@@ -1,6 +1,6 @@
 # Root Sequence Wiki
 
-A living index for the Root Sequence ecosystem: terms, projects, phrases, connections, provenance, and conceptual archaeology.
+A living index for the Root Sequence ecosystem: entities, terms, projects, phrases, connections, provenance, and conceptual archaeology.
 
 The wiki is a **navigation and context layer**, not a replacement for project repositories.
 
@@ -10,7 +10,7 @@ The wiki is a **navigation and context layer**, not a replacement for project re
 
 The Wiki is organized as a shared knowledge graph rather than a collection of disconnected project wikis.
 
-Each Root Sequence project can have a **generated project lens** that behaves like a sub-wiki: it gathers the terms, phrases, seeds, relationships, and canonical links relevant to that project without copying the underlying entries.
+Each Root Sequence project can have a **generated project lens** that behaves like a sub-wiki: it gathers the canonical entities, legacy terms, phrases, seeds, relationships, and canonical links relevant to that project without copying the underlying entries.
 
 > **Entities are canonical once; views are generated many times.**
 
@@ -18,7 +18,8 @@ See [Wiki Architecture](ARCHITECTURE.md) for the full model.
 
 ## Start here
 
-- [Lexicon](LEXICON.md) — recurring terms, adapted language, working concepts, and jokes that escaped containment.
+- [`entities/`](entities/) — canonical Wiki identities with explicit metadata, relationships, provenance, and project membership.
+- [Lexicon](LEXICON.md) — compact index of recurring terms; migrated entries link to their canonical entity pages.
 - [Phrases & motifs](PHRASES.md) — lines worth preserving because they recur, clarify a project, or become conceptual tools.
 - [Projects](PROJECTS.md) — what each project does and where its canonical work lives.
 - [Live public repo registry](AUTO_PROJECTS.md) — machine-maintained discovery of public `Root-Sequence` repositories.
@@ -31,7 +32,7 @@ See [Wiki Architecture](ARCHITECTURE.md) for the full model.
 
 ## Website
 
-The repository is configured to publish a searchable static Wiki with an automatically generated interactive knowledge graph, project lenses, and heuristic maintenance signals.
+The repository is configured to publish a searchable static Wiki with an automatically generated interactive knowledge graph, canonical entity pages, project lenses, backlinks, and maintenance signals.
 
 **Intended public URL:** `https://wiki.rootsequence.systems/`
 
@@ -39,13 +40,15 @@ Every push to `main` rebuilds the site.
 
 The generated site includes:
 
-- an interactive knowledge graph;
+- an **Entities** index with one canonical identity per migrated concept/motif;
+- an interactive knowledge graph that deduplicates entity-backed index entries;
 - project-specific lenses that act like sub-wikis without duplicate source files;
+- generated entity connections and backlinks;
 - a Wiki Signals view that surfaces orphaned entries, sparse project coverage, and other transparent maintenance cues;
 - a machine-maintained public repository registry;
 - ordinary search and navigation across the Wiki.
 
-The graph and lenses are generated from explicit Wiki structure and references. Heuristic signals are shown as suggestions, not silently promoted into canonical relationships.
+Canonical entity relationships come from explicit metadata. Legacy entries use conservative textual matching until migrated. Heuristic signals are shown as suggestions, not silently promoted into canonical relationships.
 
 ### One-time GitHub Pages setup
 
@@ -58,8 +61,8 @@ After Pages is enabled, configure `wiki.rootsequence.systems` as the custom doma
 Three complementary layers keep different kinds of knowledge current:
 
 1. **GitHub-side automation** refreshes `AUTO_PROJECTS.md` daily from public repositories only and rebuilds the site on every Wiki change.
-2. **Generated structure** creates project lenses, backlinks/graph relationships, and structural maintenance signals from the same canonical Wiki source.
-3. **Conversation-side maintenance** reviews recent Root Sequence work for durable new terms, aliases, phrases, project relationships, or provenance evidence and updates the Wiki conservatively when warranted.
+2. **Generated structure** creates entity indexes, backlinks, project lenses, graph relationships, and structural maintenance signals from the same canonical source.
+3. **Conversation-side maintenance** reviews recent Root Sequence work for durable new terms, aliases, phrases, project relationships, provenance evidence, or entity migrations and updates the Wiki conservatively when warranted.
 
 Definitions, originality claims, private/public boundaries, and canon are intentionally **not** delegated to blind automation. See [Automation](AUTOMATION.md).
 
@@ -81,10 +84,10 @@ If the question is instead "what is the full argument/design/canon?", follow the
 ## Entry lifecycle
 
 ```text
-capture → seed → working entry → linked concept → canonicalized / composted
+capture → seed → working index entry → canonical entity → mature / retired / composted
 ```
 
-Nothing needs to pretend to be finished. Uncertainty should be visible rather than papered over.
+Not every useful phrase needs an entity page. An entry should graduate when stable identity, explicit relationships, backlinks, provenance, or cross-project reuse make the richer structure useful.
 
 ## Relationship to existing Root Sequence navigation
 
