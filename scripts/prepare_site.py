@@ -58,23 +58,22 @@ def read(name: str) -> str:
 
 def parse_table_rows(text: str, heading_marker: str) -> list[list[str]]:
     lines = text.splitlines()
-    start = 0
+    start = None
     for i, line in enumerate(lines):
         if heading_marker.lower() in line.lower():
             start = i + 1
             break
+    if start is None:
+        return []
+
     rows: list[list[str]] = []
-    seen_header = False
     for line in lines[start:]:
-        if line.startswith("## ") and seen_header:
+        if line.startswith("## ") and rows:
             break
         if not line.strip().startswith("|"):
             continue
         cells = [c.strip() for c in line.strip().strip("|").split("|")]
         if cells and all(re.fullmatch(r":?-{3,}:?", c.replace(" ", "")) for c in cells):
-            continue
-        if not seen_header:
-            seen_header = True
             continue
         rows.append(cells)
     return rows
@@ -200,7 +199,7 @@ def build_graph() -> dict:
 
 
 def make_graph_page() -> str:
-    return """# Knowledge Graph\n\nThis view is generated from explicit Wiki structure. It does **not** infer hidden equivalences or treat co-occurrence as proof.\n\n<div class=\"graph-controls\">\n  <label for=\"graph-search\">Find a node</label>\n  <input id=\"graph-search\" type=\"search\" placeholder=\"term, phrase, project…\" autocomplete=\"off\">\n  <button id=\"graph-reset\" type=\"button\">Reset view</button>\n</div>\n\n<div id=\"knowledge-graph\" aria-label=\"Interactive Root Sequence knowledge graph\"></div>\n\n<div id=\"graph-detail\" class=\"graph-detail\">Select a node to see its type and relationships.</div>\n\n## How the graph is built\n\n- terms come from the Lexicon;\n- phrases come from Phrases & Motifs;\n- projects come from the curated Project Index;\n- links are created from explicit Markdown links and explicit project-name mentions;\n- no private repository contents are harvested into the graph.\n\nAs entries become individual pages with richer metadata, this graph can become more precise without changing the public URL.\n"""
+    return """# Knowledge Graph\n\nThis view is generated from explicit Wiki structure. It does **not** infer hidden equivalences or treat co-occurrence as proof.\n\n<div class=\"graph-controls\">\n  <label for=\"graph-search\">Find a node</label>\n  <input id=\"graph-search\" type=\"search\" placeholder=\"term, phrase, project…\" autocomplete=\"off\">\n  <button id=\"graph-reset\" type=\"button\">Reset view</button>\n</div>\n\n<div id=\"knowledge-graph\" data-graph-url=\"../graph.json\" aria-label=\"Interactive Root Sequence knowledge graph\"></div>\n\n<div id=\"graph-detail\" class=\"graph-detail\">Select a node to see its type and relationships.</div>\n\n## How the graph is built\n\n- terms come from the Lexicon;\n- phrases come from Phrases & Motifs;\n- projects come from the curated Project Index;\n- links are created from explicit Markdown links and explicit project-name mentions;\n- no private repository contents are harvested into the graph.\n\nAs entries become individual pages with richer metadata, this graph can become more precise without changing the public URL.\n"""
 
 
 def main() -> None:
