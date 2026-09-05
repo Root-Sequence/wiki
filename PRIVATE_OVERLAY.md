@@ -2,13 +2,13 @@
 
 The Root Sequence Wiki is one logical knowledge system with **public and private visibility layers**.
 
-The public repository remains:
+The public repository is:
 
 - `Root-Sequence/wiki`
 - public-safe entities, project descriptions, provenance, references, and generated views
 - the only source consumed by the public Pages workflow
 
-The intended private companion is:
+The private companion is:
 
 - `Root-Sequence/wiki-private`
 - a **private** repository
@@ -29,26 +29,21 @@ concept:bounded-structure
 
 `wiki-private` may contain an overlay with that same `id`. The private combined view merges the public entity with the private additions while the public view continues to use only the public entity.
 
-## Private repository layout
+## Active private repository layout
 
-Recommended structure for `Root-Sequence/wiki-private`:
+`Root-Sequence/wiki-private` uses:
 
 ```text
 README.md
-entities/
-  concept/
-  phrase/
-  motif/
-  source/
-  project/
-overlays/
-  concept/
-  phrase/
-  motif/
-  source/
-  project/
-PRIVATE_PROJECTS.md        # optional private-only project register
-SEEDS.md                   # private seeds / unresolved material
+PRIVATE_PROJECTS.md
+SEEDS.md
+entities/                 # private-only identities
+overlays/                 # private additions to public entity IDs
+templates/
+  private-entity.md
+  overlay.md
+.github/workflows/
+  validate.yml            # validates private schema against current public IDs
 ```
 
 ### `entities/`
@@ -74,6 +69,8 @@ canonical: null
 ---
 ```
 
+A private-only entity must not reuse the ID of a public entity.
+
 ### `overlays/`
 
 Use when the entity already exists publicly and the private layer needs additional context.
@@ -88,8 +85,7 @@ extends: concept:bounded-structure
 projects_add:
   - Coherent World
 aliases_add: []
-related_add:
-  - concept:another-private-concept
+related_add: []
 canonical_private: null
 status_private: working
 ---
@@ -101,7 +97,7 @@ The Markdown body can contain private notes, chronology, interpretations, or pro
 
 Private overlays are **additive by default**.
 
-Safe additive fields:
+Supported private additions include:
 
 - `projects_add`
 - `aliases_add`
@@ -109,6 +105,7 @@ Safe additive fields:
 - `canonical_private`
 - `status_private`
 - `first_known_private`
+- `provenance_notes_private`
 - private Markdown body
 
 An overlay should not silently rewrite public provenance, authorship claims, or public definitions. If public information is wrong, fix the public entity itself rather than hiding the correction in the private layer.
@@ -123,6 +120,8 @@ The public GitHub Pages workflow must never:
 - generate public files from the private overlay;
 - upload a combined graph as a Pages artifact.
 
+Public CI includes a boundary guard that fails if the Pages workflow begins referencing private-overlay inputs or tooling.
+
 A **private combined build** may read both repositories only when explicitly invoked in a trusted private environment.
 
 Recommended local layout:
@@ -133,22 +132,43 @@ Root-Sequence/
   wiki-private/
 ```
 
-Then the combined builder can read the two repositories as siblings.
+From `wiki/`:
+
+```bash
+python scripts/merge_private_overlay.py
+```
+
+The combined output is restricted to the gitignored `.private-build/` directory.
+
+## Private validation
+
+`wiki-private/.github/workflows/validate.yml` checks out the public Wiki contract and runs the same merge validator against the private repository.
+
+It validates that:
+
+- private-only entities declare `visibility: private`;
+- private-only IDs do not collide with public IDs;
+- overlay IDs correspond to real public entities;
+- `extends` matches the overlay ID;
+- an ID is not simultaneously a private-only entity and an overlay;
+- documentation README files are ignored as schema data.
+
+The combined validation data remains ephemeral on the GitHub runner and is not uploaded or deployed.
 
 ## Private combined view
 
-The private view should eventually expose:
+The private view can contain:
 
 ```text
 public entities
 + private-only entities
 + private overlays
 + public project lenses
-+ private project lenses
++ private project context
 = one combined private graph
 ```
 
-Public URLs should remain stable. Private-only entities do not need public placeholders unless their existence itself is intentionally public.
+Public URLs remain stable. Private-only entities do not need public placeholders unless their existence itself is intentionally public.
 
 ## Public-safe stubs
 
@@ -168,7 +188,7 @@ The private overlay extends the public identity rather than duplicating the proj
 
 ### Private → public
 
-Publishing private material should be an explicit act:
+Publishing private material is an explicit act:
 
 1. identify the private entity or overlay fields intended for publication;
 2. move or merge only those fields into `Root-Sequence/wiki`;
