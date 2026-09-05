@@ -1,0 +1,41 @@
+site_name: Root Sequence Wiki
+site_description: Living lexicon, project map, provenance record, and conceptual archaeology for the Root Sequence ecosystem.
+site_url: https://wiki.rootsequence.systems/
+repo_url: https://github.com/Root-Sequence/wiki
+repo_name: Root-Sequence/wiki
+edit_uri: edit/main/
+docs_dir: .site-src
+use_directory_urls: true
+
+nav:
+  - Home: index.md
+  - Lexicon: lexicon.md
+  - Phrases & Motifs: phrases.md
+  - Projects: projects.md
+  - Knowledge Graph: graph.md
+  - Provenance: provenance.md
+  - Concept Archaeology: archaeology.md
+  - Seeds: seeds.md
+  - Automation: automation.md
+  - Live Public Repo Registry: auto-projects.md
+  - Entry Template: page-template.md
+
+theme:
+  name: mkdocs
+  navigation_depth: 4
+
+plugins:
+  - search
+
+markdown_extensions:
+  - tables
+  - fenced_code
+  - attr_list
+  - toc:
+      permalink: true
+
+extra_css:
+  - assets/wiki.css
+
+extra_javascript:
+  - assets/graph.js
