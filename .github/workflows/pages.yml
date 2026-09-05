@@ -33,7 +33,9 @@ jobs:
         run: python -m pip install --disable-pip-version-check "mkdocs==1.6.1"
 
       - name: Prepare generated site source
-        run: python scripts/prepare_site.py
+        run: |
+          python scripts/prepare_site.py
+          cp PRIVATE_OVERLAY.md .site-src/private-overlay.md
 
       - name: Generate project lenses and Wiki signals
         run: python scripts/generate_project_lenses.py
