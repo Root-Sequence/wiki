@@ -28,7 +28,7 @@ An index of recurring language across Root Sequence and adjacent projects. Defin
 
 ## Canonical entities
 
-The [Entities](entities/README.md) layer holds stable Wiki identities and explicit metadata for entries that need richer relationships, backlinks, project lenses, or archaeology. The Lexicon remains the compact alphabetical/index surface rather than duplicating those pages.
+The `entities/` layer holds stable Wiki identities and explicit metadata for entries that need richer relationships, backlinks, project lenses, or archaeology. The Lexicon remains the compact index surface rather than duplicating those pages.
 
 ## Phrase-level concepts
 
