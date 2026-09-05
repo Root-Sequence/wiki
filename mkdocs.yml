@@ -9,6 +9,7 @@ use_directory_urls: true
 
 nav:
   - Home: index.md
+  - Entities: entities/index.md
   - Lexicon: lexicon.md
   - Phrases & Motifs: phrases.md
   - Projects: projects.md
@@ -31,6 +32,7 @@ plugins:
   - search
 
 markdown_extensions:
+  - meta
   - tables
   - fenced_code
   - attr_list
