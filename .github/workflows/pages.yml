@@ -32,6 +32,9 @@ jobs:
       - name: Prepare generated site source
         run: python scripts/prepare_site.py
 
+      - name: Generate project lenses and Wiki signals
+        run: python scripts/generate_project_lenses.py
+
       - name: Build site
         run: mkdocs build --strict --site-dir _site
 
