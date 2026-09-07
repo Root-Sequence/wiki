@@ -90,6 +90,18 @@ Provenance is conservative by default. Where a first author or exact origin has 
 - **Projects:** Root Sequence, Root Sequence Wiki
 - **Role:** Cross-project routing rule: let one project own the underlying substance while other projects transform the question deliberately instead of duplicating it.
 
+### "Standardize interfaces; diversify implementations."
+
+- **Provenance:** `origin-unverified`
+- **Projects:** Root Sequence
+- **Role:** Legible Systems principle: use shared interfaces to preserve interoperability while keeping multiple viable implementations and avoiding unnecessary monoculture.
+
+### "Automate memory, not judgment."
+
+- **Provenance:** `origin-unverified`
+- **Projects:** Root Sequence, Root Sequence Wiki
+- **Role:** Project Stewardship boundary: automate deterministic maintenance and reminders while surfacing semantic interpretation, deletion, renaming, and lifecycle decisions for review.
+
 ## Department of Extremely Serious Terminology
 
 ### "I see patterns and they look sign-shaped."
