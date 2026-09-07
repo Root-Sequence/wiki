@@ -26,6 +26,7 @@ An index of recurring language across Root Sequence and adjacent projects. Defin
 | **[synthesis as infrastructure](entities/synthesis-as-infrastructure.md)** | `origin-unverified` | working | Synthesis treated as a durable connective layer among knowledge, projects, decisions, and action rather than only as an intellectual activity. |
 | **synthesizing my syntheseses** | `rae-coined` | joke-escaped-containment | Using an external synthesis partner to connect, organize, test, and extend fragments the thinker has already synthesized. Yes, "syntheseses" stays. |
 | **The Unnoticed Transition** | `origin-unverified` | working | Transformation experienced through continuity rather than a clean before/after singularity event. |
+| **[user-configurable cognitive interfaces](entities/user-configurable-cognitive-interfaces.md)** | `origin-unverified` | working | Interfaces that can be shaped around how a person thinks and works while keeping adaptation inspectable, reversible, accessible, and under meaningful user control. |
 | **Zero Noticed** | `origin-unverified` | joke-escaped-containment | *No One Noticed* wordplay with a suspicious tendency to become actual lore. |
 
 ## Canonical entities
