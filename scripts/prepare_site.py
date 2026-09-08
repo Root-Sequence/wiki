@@ -31,6 +31,7 @@ PAGES = {
     "ARCHAEOLOGY.md": ("archaeology.md", "Concept Archaeology"),
     "SEEDS.md": ("seeds.md", "Seeds"),
     "AUTOMATION.md": ("automation.md", "Automation"),
+    "DEPLOYMENT.md": ("deployment.md", "Publishing & Deployment"),
     "AUTO_PROJECTS.md": ("auto-projects.md", "Live Public Repo Registry"),
     "PAGE_TEMPLATE.md": ("page-template.md", "Entry Template"),
 }
@@ -53,6 +54,9 @@ def clean_markdown_label(value: str) -> str:
 def rewrite_links(text: str) -> str:
     for src, dest in LINK_REWRITES.items():
         text = text.replace(f"]({src})", f"]({dest})")
+    text = text.replace("](entities/README.md)", "](entities/index.md)")
+    text = text.replace("](https://wiki.rootsequence.systems/lenses/)", "](lenses/index.md)")
+    text = text.replace("](https://wiki.rootsequence.systems/graph/)", "](graph.md)")
     return text
 
 
@@ -196,6 +200,7 @@ def build_graph(entities: list[dict]) -> dict:
         "doc:archaeology": ("Concept Archaeology", "archaeology/"),
         "doc:seeds": ("Seeds", "seeds/"),
         "doc:automation": ("Automation", "automation/"),
+        "doc:deployment": ("Publishing & Deployment", "deployment/"),
     }
     for node_id, (label, url) in document_nodes.items():
         add_node(node_id, label, "document", url)
@@ -280,6 +285,7 @@ def build_graph(entities: list[dict]) -> dict:
         "ARCHAEOLOGY.md": "doc:archaeology",
         "SEEDS.md": "doc:seeds",
         "AUTOMATION.md": "doc:automation",
+        "DEPLOYMENT.md": "doc:deployment",
     }
     for source_name, source_id in source_to_doc.items():
         text = read(source_name)

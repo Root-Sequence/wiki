@@ -43,6 +43,13 @@ def slugify(value: str) -> str:
     return value or "item"
 
 
+def heading_anchor(value: str) -> str:
+    """Match Python-Markdown's default heading ID behavior."""
+    value = re.sub(r"[^\w\s-]", "", value.lower()).strip()
+    value = re.sub(r"[-\s]+", "-", value)
+    return value or "item"
+
+
 def clean_label(value: str) -> str:
     value = re.sub(r"\[([^]]+)\]\([^)]+\)", r"\1", value)
     return value.replace("**", "").replace("`", "").strip()
@@ -126,7 +133,7 @@ def heading_blocks(text: str, level: int = 3) -> list[dict]:
             if nxt.startswith(prefix) or nxt.startswith("## "):
                 break
             block.append(nxt)
-        out.append({"label": title, "text": "\n".join(block), "anchor": slugify(title)})
+        out.append({"label": title, "text": "\n".join(block), "anchor": heading_anchor(title)})
     return out
 
 

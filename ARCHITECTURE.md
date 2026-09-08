@@ -167,6 +167,25 @@ The Wiki organizes **knowledge about the ecosystem**. It does not absorb every p
 
 This keeps the Wiki useful without making it a second copy of the organization.
 
+## Canonical homes and related navigation
+
+This repository is the canonical home of the **public layer** of the Root Sequence Wiki. `Root-Sequence/wiki-private` is the canonical private overlay. The earlier prototype under `Root-Sequence/root-sequence/wiki/` was migrated here on 2026-09-05.
+
+The Wiki complements, rather than replaces:
+
+- [Ecosystem Map](https://github.com/Root-Sequence/root-sequence/blob/main/ECOSYSTEM.md) for organization-wide project relationships;
+- [Idea Trails](https://github.com/Root-Sequence/root-sequence/blob/main/IDEA_TRAILS.md) and the [Idea Trail Browser](https://github.com/Root-Sequence/root-sequence/blob/main/IDEA_TRAIL_INDEX.md) for recurring cross-project questions and document trails;
+- [Root Sequence concepts](https://github.com/Root-Sequence/root-sequence/tree/main/concepts) for canonical Root Sequence concept treatments;
+- [Root Sequence repository map](https://github.com/Root-Sequence/root-sequence/blob/main/root_map.md) for the internal structure of the conceptual commons.
+
+The lifecycle of an entry is intentionally gradual:
+
+```text
+capture → seed → working index entry → canonical entity → mature / retired / composted
+```
+
+Not every useful phrase needs an entity page. An entry should graduate when stable identity, explicit relationships, backlinks, provenance, or cross-project reuse make the richer structure useful. Visibility is independent of maturity: an entry may be public, private-only, or publicly identified with additional private context.
+
 ## Three layers of “intelligence”
 
 The Wiki can feel increasingly intelligent without pretending a heuristic is understanding.
