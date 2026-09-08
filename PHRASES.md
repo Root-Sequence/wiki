@@ -90,6 +90,24 @@ Provenance is conservative by default. Where a first author or exact origin has 
 - **Projects:** Root Sequence, Root Sequence Wiki
 - **Role:** Cross-project routing rule: let one project own the underlying substance while other projects transform the question deliberately instead of duplicating it.
 
+### "Being Human(e) notices. Human(e) Design translates. Implementation tests."
+
+- **Provenance:** `project-origin`
+- **Projects:** Root Sequence, Being Human(e)
+- **Role:** Separates grounded observation, design translation, and implementation evidence so no layer silently becomes doctrine.
+
+### "Explanation first; technical trace second."
+
+- **Provenance:** `project-origin`
+- **Projects:** Root Sequence
+- **Role:** Technical Accessibility pattern: make practical meaning understandable without discarding the inspectable evidence and implementation detail underneath.
+
+### "No critical human need should depend unnecessarily on a single technology, institution, interface, or skill path."
+
+- **Provenance:** `project-origin`
+- **Projects:** Root Sequence
+- **Role:** Technological Autonomy principle linking refusal, multi-path access, and graceful degradation to resilience.
+
 ### "Standardize interfaces; diversify implementations."
 
 - **Provenance:** `origin-unverified`
