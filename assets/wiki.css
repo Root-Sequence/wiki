@@ -1,25 +1,268 @@
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+:root {
+  --rs-bg: #0f1211;
+  --rs-bg-soft: #151918;
+  --rs-panel: #1a1f1d;
+  --rs-panel-2: #202622;
+  --rs-border: #343b37;
+  --rs-text: #e9eee9;
+  --rs-muted: #a6b0aa;
+  --rs-link: #8fd0a9;
+  --rs-link-hover: #b8e9c9;
+  --rs-accent: #6fb58e;
+  --rs-code: #dce5df;
+  --rs-code-bg: #242a27;
 }
 
 body {
-  background: #f7f7f5;
+  background: var(--rs-bg) !important;
+  color: var(--rs-text) !important;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
 
-.wy-nav-content,
-.container {
-  max-width: 1120px;
+body,
+input,
+button,
+select,
+textarea {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-code,
-pre {
+/* Stock MkDocs header/nav, normalized into the same visual system. */
+.navbar,
+.navbar-default {
+  background: var(--rs-bg-soft) !important;
+  border-color: var(--rs-border) !important;
+  box-shadow: none !important;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav > li > a,
+.navbar .navbar-text,
+.navbar a {
+  color: var(--rs-text) !important;
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus,
+.navbar a:hover {
+  color: var(--rs-link-hover) !important;
+  background: transparent !important;
+}
+
+.navbar-toggle {
+  border-color: var(--rs-border) !important;
+}
+
+.navbar-toggle .icon-bar {
+  background: var(--rs-text) !important;
+}
+
+/* Main page geometry. */
+.container,
+.container-fluid {
+  width: min(1220px, calc(100% - 32px));
+  max-width: 1220px;
+}
+
+.bs-sidebar,
+.col-md-3 {
+  color: var(--rs-muted);
+}
+
+.bs-sidenav,
+.bs-sidebar .nav {
+  background: var(--rs-panel) !important;
+  border: 1px solid var(--rs-border);
+  border-radius: 10px;
+  padding: 10px 8px;
+}
+
+.bs-sidebar .nav > li > a {
+  color: var(--rs-muted) !important;
+  border-left: 2px solid transparent;
+  padding: 7px 12px;
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+.bs-sidebar .nav > li > a:hover,
+.bs-sidebar .nav > li > a:focus,
+.bs-sidebar .nav > .active > a,
+.bs-sidebar .nav > .active:hover > a,
+.bs-sidebar .nav > .active:focus > a {
+  color: var(--rs-text) !important;
+  background: var(--rs-panel-2) !important;
+  border-left-color: var(--rs-accent);
+}
+
+.bs-sidebar .nav .nav > li > a {
+  font-size: 0.84rem;
+  padding-left: 24px;
+}
+
+/* Content area. */
+main,
+[role="main"],
+.col-md-9 {
+  color: var(--rs-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--rs-text) !important;
+  line-height: 1.25;
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-top: 0.3em;
+  margin-bottom: 0.55em;
+}
+
+h2 {
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+  margin-top: 1.9em;
+  margin-bottom: 0.65em;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid var(--rs-border);
+}
+
+h3 {
+  font-size: 1.28rem;
+  margin-top: 1.6em;
+}
+
+p,
+li,
+dd,
+dt,
+td,
+th {
+  color: var(--rs-text);
+}
+
+p,
+ul,
+ol,
+table,
+pre,
+blockquote {
+  margin-bottom: 1.15rem;
+}
+
+a {
+  color: var(--rs-link) !important;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+a:hover,
+a:focus {
+  color: var(--rs-link-hover) !important;
+}
+
+hr {
+  border-color: var(--rs-border);
+}
+
+blockquote {
+  color: var(--rs-muted);
+  border-left: 3px solid var(--rs-accent);
+  background: var(--rs-panel);
+  padding: 0.8rem 1rem;
+  border-radius: 0 8px 8px 0;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+code {
+  color: var(--rs-code) !important;
+  background: var(--rs-code-bg) !important;
+  border: 1px solid var(--rs-border);
+  border-radius: 4px;
+  padding: 0.08em 0.3em;
   font-variant-ligatures: none;
 }
 
-table {
-  width: 100%;
+pre {
+  color: var(--rs-code) !important;
+  background: var(--rs-code-bg) !important;
+  border: 1px solid var(--rs-border) !important;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
 }
 
+pre code {
+  border: 0;
+  padding: 0;
+  background: transparent !important;
+}
+
+.table,
+table {
+  width: 100%;
+  background: transparent !important;
+}
+
+table th,
+table td,
+.table > thead > tr > th,
+.table > tbody > tr > td {
+  border-color: var(--rs-border) !important;
+  vertical-align: top;
+}
+
+table th,
+.table > thead > tr > th {
+  background: var(--rs-panel);
+  color: var(--rs-text);
+}
+
+table tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.018);
+}
+
+/* Search/dropdowns/footer. */
+.dropdown-menu,
+.form-control,
+input[type="text"],
+input[type="search"] {
+  color: var(--rs-text) !important;
+  background: var(--rs-panel) !important;
+  border-color: var(--rs-border) !important;
+}
+
+.dropdown-menu > li > a {
+  color: var(--rs-text) !important;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background: var(--rs-panel-2) !important;
+}
+
+footer,
+footer p {
+  color: var(--rs-muted) !important;
+}
+
+/* Knowledge graph. */
 .graph-controls {
   display: flex;
   flex-wrap: wrap;
@@ -34,26 +277,30 @@ table {
 
 .graph-controls input {
   min-width: min(28rem, 80vw);
-  padding: 0.6rem 0.7rem;
-  border: 1px solid #b8b8b2;
-  border-radius: 0.35rem;
-  background: white;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--rs-border);
+  border-radius: 0.45rem;
 }
 
 .graph-controls button {
-  padding: 0.6rem 0.8rem;
-  border: 1px solid #9a9a94;
-  border-radius: 0.35rem;
-  background: white;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--rs-border);
+  border-radius: 0.45rem;
+  background: var(--rs-panel);
+  color: var(--rs-text);
   cursor: pointer;
+}
+
+.graph-controls button:hover {
+  background: var(--rs-panel-2);
 }
 
 #knowledge-graph {
   min-height: 34rem;
-  border: 1px solid #c9c9c3;
-  border-radius: 0.5rem;
+  border: 1px solid var(--rs-border);
+  border-radius: 0.65rem;
   overflow: hidden;
-  background: white;
+  background: var(--rs-panel);
 }
 
 #knowledge-graph svg {
@@ -64,7 +311,7 @@ table {
 }
 
 .graph-edge {
-  stroke: #c4c4be;
+  stroke: #59615d;
   stroke-width: 1.1;
   opacity: 0.72;
 }
@@ -79,89 +326,87 @@ table {
 }
 
 .graph-node circle {
-  fill: #4d5965;
-  stroke: white;
+  fill: #64717b;
+  stroke: var(--rs-bg);
   stroke-width: 1.5;
 }
 
-.graph-node.kind-project circle {
-  fill: #3f6d58;
-}
-
-.graph-node.kind-term circle {
-  fill: #5c527a;
-}
-
-.graph-node.kind-phrase circle {
-  fill: #7b5b43;
-}
-
-.graph-node.kind-document circle {
-  fill: #2d485f;
-}
+.graph-node.kind-project circle { fill: #5a9475; }
+.graph-node.kind-term circle { fill: #7d70a8; }
+.graph-node.kind-phrase circle { fill: #9a7558; }
+.graph-node.kind-document circle { fill: #58758c; }
+.graph-node.kind-concept circle { fill: #6b8fbd; }
+.graph-node.kind-motif circle { fill: #9b6f91; }
 
 .graph-node text {
   font-size: 12px;
   pointer-events: none;
-  fill: #222;
+  fill: var(--rs-text);
   paint-order: stroke;
-  stroke: white;
+  stroke: var(--rs-panel);
   stroke-width: 3px;
   stroke-linejoin: round;
 }
 
 .graph-node:focus circle,
 .graph-node.graph-match circle {
-  stroke: #111;
+  stroke: #f2f5f3;
   stroke-width: 2.5;
 }
 
-.graph-dim {
-  opacity: 0.1;
-}
+.graph-dim { opacity: 0.1; }
 
 .graph-detail {
   margin: 1rem 0 2rem;
   padding: 1rem 1.1rem;
-  border-left: 3px solid #6c6c66;
-  background: #efefeb;
+  border-left: 3px solid var(--rs-accent);
+  background: var(--rs-panel);
+  border-radius: 0 8px 8px 0;
 }
 
-.graph-detail h3 {
-  margin-top: 0;
-}
+.graph-detail h3 { margin-top: 0; }
 
 .relation-label {
   font-size: 0.85em;
-  opacity: 0.7;
+  opacity: 0.76;
   margin-left: 0.35rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (max-width: 991px) {
   body {
-    background: #161817;
+    font-size: 16px;
   }
 
-  #knowledge-graph,
+  .container,
+  .container-fluid {
+    width: min(100% - 20px, 920px);
+  }
+
+  .bs-sidenav,
+  .bs-sidebar .nav {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.45rem; }
+
+  .graph-controls {
+    display: block;
+  }
+
   .graph-controls input,
   .graph-controls button {
-    background: #202321;
-    color: #ecece8;
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 0.65rem;
   }
 
-  #knowledge-graph,
-  .graph-controls input,
-  .graph-controls button {
-    border-color: #454943;
-  }
-
-  .graph-node text {
-    fill: #f2f2ee;
-    stroke: #202321;
-  }
-
-  .graph-detail {
-    background: #242724;
-    border-left-color: #8a8e87;
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
