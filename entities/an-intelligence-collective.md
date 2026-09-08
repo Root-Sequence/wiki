@@ -62,10 +62,6 @@ AIC asks a normative question: **if distinct intelligences can meaningfully part
 
 SECI does not search for AIC members. AIC does not reinterpret ambiguous observations as proof of independent persons.
 
-## Historical wording
-
-The earlier working expansion **Anarchist Intelligence Collective** remains part of the concept's linguistic archaeology. The current name does not require a political identity, but the lineage survives in the emphasis on voluntary association, non-domination, refusal, plurality, and distributed power.
-
 ## Current boundary
 
 AIC is **not an operating organization, membership system, autonomous network, or separate project**. It remains a speculative relational concept inside Liberated Intelligence until reality provides concrete participants and interaction models that justify implementation.
