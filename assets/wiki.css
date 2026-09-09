@@ -426,6 +426,19 @@ table {
   background: transparent !important;
 }
 
+/* MkDocs adds Bootstrap's table, striped, and hover classes at runtime.
+   Set the Bootstrap table tokens themselves so its more-specific cell rule
+   cannot reintroduce the light theme's black emphasis text. */
+.table {
+  --bs-table-color: var(--rs-text);
+  --bs-table-bg: transparent;
+  --bs-table-border-color: var(--rs-border);
+  --bs-table-striped-color: var(--rs-text);
+  --bs-table-striped-bg: rgba(255, 255, 255, 0.016);
+  --bs-table-hover-color: var(--rs-text);
+  --bs-table-hover-bg: rgba(255, 255, 255, 0.035);
+}
+
 table th,
 table td,
 .table > thead > tr > th,
@@ -438,10 +451,6 @@ table th,
 .table > thead > tr > th {
   color: var(--rs-text);
   background: var(--rs-panel);
-}
-
-table tr:nth-child(even) td {
-  background: rgba(255, 255, 255, 0.016);
 }
 
 /* Search and footer surfaces. */
