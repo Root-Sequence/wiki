@@ -4,6 +4,7 @@ An index of recurring language across Root Sequence and adjacent projects. Defin
 
 | Term | Provenance | Status | Working sense / note |
 | --- | --- | --- | --- |
+| **[Abandoned Futures](entities/abandoned-futures.md)** | `origin-unverified` | developing | Materially or socially developed possibilities that advanced beyond pure speculation, were interrupted or displaced, and remain recoverable through evidence or renewed development without implying that they should be revived unchanged. |
 | **After Friction** | `origin-unverified` | working | A possible condition or design space after large amounts of artificial systemic friction are removed. Closely associated with Coherent World / *No One Noticed*. |
 | **[An Intelligence Collective (AIC)](entities/an-intelligence-collective.md)** | `project-origin` | working | A voluntary association among distinct intelligences that preserves plurality, refusal, exit, and non-domination rather than assuming one compulsory mind or authority. |
 | **anarchist calisthenics** | `established-term` / adapted | established | Small practices that exercise non-hierarchical judgment and reduce automatic deference to authority. Existing term; ecosystem usage connects it to personal anarchism and humane practice. |
