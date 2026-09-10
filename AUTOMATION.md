@@ -62,6 +62,8 @@ These signals simulate some useful behaviors of an "intelligent" knowledge syste
 
 GitHub cannot see ideas that exist only in a chat. A separate ChatGPT-side maintenance pass can review recent Root Sequence work and update the Wiki when appropriate.
 
+The canonical invocation and routing contract is [Root Sequence Thought Routing](https://github.com/Root-Sequence/root-sequence/blob/main/THOUGHT_ROUTING.md) (`RS?`). A user can end a thought with `RS?` or say “route this” / “put this places” to request the full ecosystem pass. Narrower prompts such as `BHIG?` retain their project-specific scope.
+
 That pass should:
 
 - add clearly durable new terms, aliases, phrases, project relationships, and provenance evidence;
@@ -70,6 +72,7 @@ That pass should:
 - prefer `SEEDS.md` for material that is suggestive but not mature;
 - never expose private project content merely because the assistant can access it;
 - preserve one canonical substantive home and link to it rather than copying whole documents.
+- report exact changes, unresolved routing, and explicit canon/publication effects in a routing receipt.
 
 Once `Root-Sequence/wiki-private` exists, private-only material should be routed there rather than captured in the public base.
 

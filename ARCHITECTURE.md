@@ -184,6 +184,8 @@ The lifecycle of an entry is intentionally gradual:
 capture → seed → working index entry → canonical entity → mature / retired / composted
 ```
 
+The [`RS?` thought-routing convention](https://github.com/Root-Sequence/root-sequence/blob/main/THOUGHT_ROUTING.md) coordinates that lifecycle across project-local inboxes, canonical repositories, the Wiki, Idea Trails, and private Console views. The Wiki receives an entity only when stable identity or cross-project retrieval warrants one; it does not receive a copy of every routed thought.
+
 Not every useful phrase needs an entity page. An entry should graduate when stable identity, explicit relationships, backlinks, provenance, or cross-project reuse make the richer structure useful. Visibility is independent of maturity: an entry may be public, private-only, or publicly identified with additional private context.
 
 ## Three layers of “intelligence”
