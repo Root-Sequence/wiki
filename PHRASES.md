@@ -42,6 +42,18 @@ Provenance is conservative by default. Where a first author or exact origin has 
 - **Projects:** Root Sequence
 - **Role:** Futures methodology: make alternatives testable rather than overclaiming forecast certainty.
 
+### "We do not need to invent the future from scratch. It was here all along until it was abandoned."
+
+- **Provenance:** `origin-unverified`
+- **Projects:** Root Sequence, Coherent World, *No One Noticed*
+- **Role:** Core [Abandoned Futures](entities/abandoned-futures.md) motif: treat future-making partly as recovery, comparison, and recombination of evidenced possibilities rather than blank-slate invention.
+
+### "Recover the possibility, not the hierarchy that once contained it."
+
+- **Provenance:** `origin-unverified`
+- **Projects:** Root Sequence
+- **Role:** Abandoned-futures recovery rule: a useful mechanism or capacity can be transformed without restoring the ownership, exclusion, exploitation, or authority structure around its earlier form.
+
 ### "Graph, not filing cabinet."
 
 - **Provenance:** `origin-unverified`
