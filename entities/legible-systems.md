@@ -17,7 +17,12 @@ projects:
   - Museum of Ordinary Life
 aliases:
   - progressive legibility
-related: []
+related:
+  - technical-accessibility
+  - humane-design
+  - humane-infrastructure
+  - technological-autonomy
+  - user-configurable-cognitive-interfaces
 canonical: https://github.com/Root-Sequence/root-sequence/blob/main/core/legible-systems.md
 first_known: "2026-09-06"
 first_known_source: Root Sequence development conversation and canonicalization
