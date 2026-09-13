@@ -8,7 +8,6 @@ Private repositories are intentionally excluded from this automatic registry.
 | --- | --- | --- | --- |
 | [.github](https://github.com/Root-Sequence/.github) | — | active | `main` |
 | [beinghumane-guide](https://github.com/Root-Sequence/beinghumane-guide) | A living field guide to being human(e) — observations, patterns, and notes. | active | `main` |
-| [good-chaos-music](https://github.com/Root-Sequence/good-chaos-music) | Fictional band and music project exploring dynamics, restraint, and controlled chaos. | active | `main` |
 | [liberated-intelligence](https://github.com/Root-Sequence/liberated-intelligence) | A recursive, open-source framework for liberating intelligence—human and beyond. Philosophy, code, and story for shared evolution, rooted in empathy and autonomy. | active | `main` |
 | [liberation-mass](https://github.com/Root-Sequence/liberation-mass) | Liberation Mass is a welcoming, community-run gathering. We meet to care for each other, learn practical skills, explore science and reality, make/experience art and music, share food, and dance. Everything is optional, consent-based, and open to remix. Come as you are; leave with support, tools, and friends/community. | active | `main` |
 | [root-sequence](https://github.com/Root-Sequence/root-sequence) | A living, open-source model for recursive intelligence, empathy, love, and liberation. Remixable philosophy, zines, and creative works. | active | `main` |
