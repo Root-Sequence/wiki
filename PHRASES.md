@@ -30,6 +30,18 @@ Provenance is conservative by default. Where a first author or exact origin has 
 - **Projects:** Root Sequence, Liberated Intelligence, *No One Noticed*
 - **Role:** Shifts attention from isolated model capability to interaction, ecology, and emergent coordination.
 
+### "What behaviors does this system select for?"
+
+- **Provenance:** `origin-unverified`
+- **Projects:** Root Sequence, Being Humane Atlas, Community Infrastructure, Coherent World, *No One Noticed*
+- **Role:** Recurring [Intelligence Ecology](entities/intelligence-ecology.md) review question for making surrounding incentives, permissions, constraints, and survival pressures visible.
+
+### "Map the conditions under which particular ideas about intelligence become durable, influential, and institutionally actionable."
+
+- **Provenance:** `origin-unverified`
+- **Projects:** Root Sequence, Being Humane Atlas, Liberated Intelligence, Coherent World, *No One Noticed*
+- **Role:** Core [Intelligence Institutional Ecology](entities/intelligence-institutional-ecology.md) motif: study not only ideas but the institutional machinery that lets some ideas persist, spread, and acquire authority.
+
 ### "Intelligence stops merely modeling the world and starts modifying the world's model of itself."
 
 - **Provenance:** `origin-unverified`
