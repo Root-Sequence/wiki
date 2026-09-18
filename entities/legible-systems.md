@@ -23,7 +23,7 @@ related:
   - humane-infrastructure
   - technological-autonomy
   - user-configurable-cognitive-interfaces
-canonical: https://github.com/Root-Sequence/root-sequence/blob/main/core/legible-systems.md
+canonical: https://github.com/Root-Sequence/root-sequence/blob/main/concepts/legible-systems.md
 first_known: "2026-09-06"
 first_known_source: Root Sequence development conversation and canonicalization
 ---
@@ -56,6 +56,6 @@ A key distinction is that **systems becoming legible to people does not require 
 
 ## Canonical substantive home
 
-The full argument and design principles live in [`Root-Sequence/root-sequence/core/legible-systems.md`](https://github.com/Root-Sequence/root-sequence/blob/main/core/legible-systems.md).
+The full argument and design principles live in [`Root-Sequence/root-sequence/concepts/legible-systems.md`](https://github.com/Root-Sequence/root-sequence/blob/main/concepts/legible-systems.md).
 
 The Wiki should index project-specific transformations rather than duplicate that document.
