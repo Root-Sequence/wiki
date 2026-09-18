@@ -20,7 +20,7 @@ related:
   - legible-systems
   - humane-design
   - user-configurable-cognitive-interfaces
-canonical: https://github.com/Root-Sequence/root-sequence/blob/main/core/legible-systems.md#technical-accessibility
+canonical: https://github.com/Root-Sequence/root-sequence/blob/main/concepts/legible-systems.md#technical-accessibility
 first_known: "2026-09-07"
 first_known_source: "Root Sequence formalization within Legible Systems; broader accessibility, plain-language, and progressive-disclosure practices predate this ecosystem use"
 ---
@@ -52,4 +52,4 @@ A recurring interface pattern is to explain the practical meaning, consequence, 
 
 ## Canonical substantive home
 
-The substantive treatment lives in [`Root-Sequence/root-sequence/core/legible-systems.md`](https://github.com/Root-Sequence/root-sequence/blob/main/core/legible-systems.md#technical-accessibility). The Wiki owns the stable identity, relationships, aliases, and provenance rather than duplicating that argument.
+The substantive treatment lives in [`Root-Sequence/root-sequence/concepts/legible-systems.md`](https://github.com/Root-Sequence/root-sequence/blob/main/concepts/legible-systems.md#technical-accessibility). The Wiki owns the stable identity, relationships, aliases, and provenance rather than duplicating that argument.
