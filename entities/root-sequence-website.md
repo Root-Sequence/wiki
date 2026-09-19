@@ -23,15 +23,17 @@ first_known_source: "The public rootsequence.systems site predates the current r
 
 ## Short definition
 
-The reader-facing public website for Root Sequence at `rootsequence.systems`. Its canonical editorial and publishing source now lives under [`Root-Sequence/root-sequence/site/`](https://github.com/Root-Sequence/root-sequence/tree/main/site), while the research repository remains the substantive home of the full arguments and the Root Sequence Wiki remains the shared ecosystem reference.
+The reader-facing public website for Root Sequence at `rootsequence.systems`. Its canonical editorial and publishing source lives under [`Root-Sequence/root-sequence/site/`](https://github.com/Root-Sequence/root-sequence/tree/main/site), while the research repository remains the substantive home of the full arguments and the Root Sequence Wiki remains the shared ecosystem reference.
 
 ## Current source and publication state
 
 On September 18, 2026, the current single-page public seed was approved and `site/index.html` became the canonical editorial source. The publishing workflow builds an approved release from that source rather than publishing the repository tree directly.
 
-GitHub Pages is configured as the intended website host and the generated release has been verified at the staged GitHub Pages origin. The custom domain is configured there, but the public web DNS cutover from Fastmail is still pending. Until that web-only cutover is complete, Fastmail remains the public website host; its DNS and mail service remain separate from the website migration.
+GitHub Pages is enabled with GitHub Actions as the publishing source, and the generated release was verified at the staged Pages origin before the custom domain was attached.
 
-This status distinction matters: a verified staged Pages deployment is not the same thing as a completed custom-domain cutover.
+The **web-only DNS cutover was saved in Fastmail on September 18, 2026**. The four apex A records now point to GitHub Pages and `www` has an explicit CNAME to `root-sequence.github.io`. Google Public DNS and Cloudflare both returned the new records after the change. Fastmail still provides the domain's nameservers and email service; MX, SPF, DMARC, and DKIM records were intentionally left in place.
+
+GitHub's custom-domain health check recognizes both the apex and `www` names as valid and served by Pages. Certificate issuance is still pending, so public HTTPS/browser verification and enabling **Enforce HTTPS** remain incomplete. The migration should therefore be described as **DNS-cut-over with certificate finalization pending**, not merely staged and not yet fully closed.
 
 ## Historical Public Seed
 
