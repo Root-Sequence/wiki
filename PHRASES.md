@@ -126,6 +126,12 @@ Provenance is conservative by default. Where a first author or exact origin has 
 - **Projects:** Root Sequence
 - **Role:** Technical Accessibility pattern: make practical meaning understandable without discarding the inspectable evidence and implementation detail underneath.
 
+### "AI should reduce the cost of expression without reducing the visibility of thought."
+
+- **Provenance:** `rae-coined`
+- **Projects:** Root Sequence
+- **Role:** Core [Legible AI-Assisted Expression](entities/legible-ai-assisted-expression.md) principle: assistance can lower the burden of externalizing and organizing thought while keeping contribution provenance, transformations, support, uncertainty, and decisions visible.
+
 ### "No critical human need should depend unnecessarily on a single technology, institution, interface, or skill path."
 
 - **Provenance:** `project-origin`
