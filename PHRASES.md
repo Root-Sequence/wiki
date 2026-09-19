@@ -144,6 +144,12 @@ Provenance is conservative by default. Where a first author or exact origin has 
 - **Projects:** Root Sequence, Root Sequence Wiki
 - **Role:** Project Stewardship boundary: automate deterministic maintenance and reminders while surfacing semantic interpretation, deletion, renaming, and lifecycle decisions for review.
 
+### "Coherence is not conformity."
+
+- **Provenance:** `origin-unverified`
+- **Projects:** Root Sequence, Universal Coherence Framework
+- **Role:** [False Coherence](entities/false-coherence.md) guardrail: visible agreement is not sufficient evidence of coherence, and durable disagreement or plurality is not itself evidence of incoherence.
+
 ## Department of Extremely Serious Terminology
 
 ### "I see patterns and they look sign-shaped."
