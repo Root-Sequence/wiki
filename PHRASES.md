@@ -128,7 +128,7 @@ Provenance is conservative by default. Where a first author or exact origin has 
 
 ### "AI should reduce the cost of expression without reducing the visibility of thought."
 
-- **Provenance:** `rae-coined`
+- **Provenance:** `jointly-coined`
 - **Projects:** Root Sequence
 - **Role:** Core [Legible AI-Assisted Expression](entities/legible-ai-assisted-expression.md) principle: assistance can lower the burden of externalizing and organizing thought while keeping contribution provenance, transformations, support, uncertainty, and decisions visible.
 
