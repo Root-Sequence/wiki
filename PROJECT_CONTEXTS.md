@@ -13,6 +13,7 @@ The project context is not a duplicate canon. It identifies the canonical docume
 | --- | --- | --- |
 | Root Sequence Wiki | [Start](START-HERE.md) | [Context](PROJECT-CONTEXT.md) |
 | Organization infrastructure | [Start](https://github.com/Root-Sequence/.github/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/.github/blob/main/PROJECT-CONTEXT.md) |
+| Liberated Intelligence | [Start](https://github.com/Root-Sequence/liberated-intelligence/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/liberated-intelligence/blob/main/PROJECT-CONTEXT.md) |
 
 ## Pending public rollout
 
@@ -21,7 +22,6 @@ These draft proposals exist, but their context files are not yet on the reposito
 | Project | Draft proposal |
 | --- | --- |
 | Root Sequence | [root-sequence#16](https://github.com/Root-Sequence/root-sequence/pull/16) |
-| Liberated Intelligence | [liberated-intelligence#2](https://github.com/Root-Sequence/liberated-intelligence/pull/2) |
 | Universal Coherence Framework | [universal-coherence-framework#3](https://github.com/Root-Sequence/universal-coherence-framework/pull/3) |
 | Being Human(e) | [beinghumane-guide#1](https://github.com/Root-Sequence/beinghumane-guide/pull/1) |
 | Liberation Mass | [liberation-mass#3](https://github.com/Root-Sequence/liberation-mass/pull/3) |
