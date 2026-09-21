@@ -8,6 +8,8 @@ review_sources: README.md, ARCHITECTURE.md, PRIVATE_OVERLAY.md, LEXICON.md, PHRA
 review_when: schema, public/private architecture, navigation, publication, or entity-routing changes
 END-START-HERE-META -->
 
+For a comprehensive working briefing, continue to [PROJECT-CONTEXT.md](PROJECT-CONTEXT.md).
+
 ## In one sentence
 
 The Root Sequence Wiki is the public navigation, vocabulary, provenance, and conceptual-memory layer for the ecosystem.
