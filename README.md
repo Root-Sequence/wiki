@@ -1,5 +1,7 @@
 # Root Sequence Wiki
 
+> **New, returning, or overloaded? Read [START-HERE.md](START-HERE.md) for the smallest useful map.**
+
 A living map of the ideas, language, projects, and relationships that make up Root Sequence.
 
 Use the Wiki to orient yourself, follow an idea across projects, or find the canonical place where the fuller work lives. It is a navigation and context layer—not a replacement for the projects themselves.
