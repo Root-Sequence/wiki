@@ -2,6 +2,8 @@
 
 This is a quick-entry index. The [Root Sequence Ecosystem Map](https://github.com/Root-Sequence/root-sequence/blob/main/ECOSYSTEM.md) remains the canonical organization-level map and routing guide.
 
+For consistent repository-level briefings, use the [`START-HERE.md` / `PROJECT-CONTEXT.md` index](PROJECT_CONTEXTS.md). These files route to canonical sources; they do not replace this curated cross-project map.
+
 ## Core ecosystem
 
 | Project | Role | Canonical home |
