@@ -13,19 +13,16 @@ The project context is not a duplicate canon. It identifies the canonical docume
 | --- | --- | --- |
 | Root Sequence Wiki | [Start](START-HERE.md) | [Context](PROJECT-CONTEXT.md) |
 | Organization infrastructure | [Start](https://github.com/Root-Sequence/.github/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/.github/blob/main/PROJECT-CONTEXT.md) |
+| Root Sequence | [Start](https://github.com/Root-Sequence/root-sequence/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/root-sequence/blob/main/PROJECT-CONTEXT.md) |
 | Liberated Intelligence | [Start](https://github.com/Root-Sequence/liberated-intelligence/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/liberated-intelligence/blob/main/PROJECT-CONTEXT.md) |
+| Universal Coherence Framework | [Start](https://github.com/Root-Sequence/universal-coherence-framework/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/universal-coherence-framework/blob/main/PROJECT-CONTEXT.md) |
+| Being Human(e) | [Start](https://github.com/Root-Sequence/beinghumane-guide/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/beinghumane-guide/blob/main/PROJECT-CONTEXT.md) |
+| Liberation Mass | [Start](https://github.com/Root-Sequence/liberation-mass/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/liberation-mass/blob/main/PROJECT-CONTEXT.md) |
+| Root Sequence Discussions | [Start](https://github.com/Root-Sequence/root-sequence-discussions/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/root-sequence-discussions/blob/main/PROJECT-CONTEXT.md) |
 
 ## Pending public rollout
 
-These draft proposals exist, but their context files are not yet on the repositories' default branches. The rows should move to the available table only after merge.
-
-| Project | Draft proposal |
-| --- | --- |
-| Root Sequence | [root-sequence#16](https://github.com/Root-Sequence/root-sequence/pull/16) |
-| Universal Coherence Framework | [universal-coherence-framework#3](https://github.com/Root-Sequence/universal-coherence-framework/pull/3) |
-| Being Human(e) | [beinghumane-guide#1](https://github.com/Root-Sequence/beinghumane-guide/pull/1) |
-| Liberation Mass | [liberation-mass#3](https://github.com/Root-Sequence/liberation-mass/pull/3) |
-| Root Sequence Discussions | [root-sequence-discussions#4](https://github.com/Root-Sequence/root-sequence-discussions/pull/4) |
+No tracked public rollout proposals remain pending from this rollout. Move future rows here only while their context files are still draft-only; move them to the available table after merge and default-branch verification.
 
 ## Private project contexts
 
