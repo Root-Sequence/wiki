@@ -1,28 +1,35 @@
 # Project Context Index
 
-Root Sequence repositories use two complementary entry points:
+Root Sequence repositories are adopting two complementary entry points:
 
 - `START-HERE.md` — the smallest useful human-oriented map;
 - `PROJECT-CONTEXT.md` — a structured briefing for contributors, maintainers, assistants, and tools.
 
 The project context is not a duplicate canon. It identifies the canonical documents that answer different questions, records important boundaries, and explains typed ecosystem relationships.
 
-## Public project contexts
+## Available on public default branches
 
 | Project | Start here | Project context |
 | --- | --- | --- |
-| Root Sequence | [Start](https://github.com/Root-Sequence/root-sequence/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/root-sequence/blob/main/PROJECT-CONTEXT.md) |
-| Liberated Intelligence | [Start](https://github.com/Root-Sequence/liberated-intelligence/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/liberated-intelligence/blob/main/PROJECT-CONTEXT.md) |
-| Universal Coherence Framework | [Start](https://github.com/Root-Sequence/universal-coherence-framework/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/universal-coherence-framework/blob/main/PROJECT-CONTEXT.md) |
-| Being Human(e) | [Start](https://github.com/Root-Sequence/beinghumane-guide/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/beinghumane-guide/blob/main/PROJECT-CONTEXT.md) |
-| Liberation Mass | [Start](https://github.com/Root-Sequence/liberation-mass/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/liberation-mass/blob/main/PROJECT-CONTEXT.md) |
 | Root Sequence Wiki | [Start](START-HERE.md) | [Context](PROJECT-CONTEXT.md) |
-| Root Sequence Discussions | [Start](https://github.com/Root-Sequence/root-sequence-discussions/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/root-sequence-discussions/blob/main/PROJECT-CONTEXT.md) |
 | Organization infrastructure | [Start](https://github.com/Root-Sequence/.github/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/.github/blob/main/PROJECT-CONTEXT.md) |
+
+## Pending public rollout
+
+These draft proposals exist, but their context files are not yet on the repositories' default branches. The rows should move to the available table only after merge.
+
+| Project | Draft proposal |
+| --- | --- |
+| Root Sequence | [root-sequence#16](https://github.com/Root-Sequence/root-sequence/pull/16) |
+| Liberated Intelligence | [liberated-intelligence#2](https://github.com/Root-Sequence/liberated-intelligence/pull/2) |
+| Universal Coherence Framework | [universal-coherence-framework#3](https://github.com/Root-Sequence/universal-coherence-framework/pull/3) |
+| Being Human(e) | [beinghumane-guide#1](https://github.com/Root-Sequence/beinghumane-guide/pull/1) |
+| Liberation Mass | [liberation-mass#3](https://github.com/Root-Sequence/liberation-mass/pull/3) |
+| Root Sequence Discussions | [root-sequence-discussions#4](https://github.com/Root-Sequence/root-sequence-discussions/pull/4) |
 
 ## Private project contexts
 
-Authorized collaborators can use the same two-file interface in `beinghumane-atlas`, `community-infrastructure`, `coherent-world`, `coherent-computing`, `good-chaos-music`, and `wiki-private`. The public Wiki records their intentionally disclosed roles but does not read or reproduce their private context files.
+The same two-file interface is proposed for `beinghumane-atlas`, `community-infrastructure`, `coherent-world`, `coherent-computing`, `good-chaos-music`, and `wiki-private`. The public Wiki records only their intentionally disclosed roles; it does not inspect, verify, link to, or reproduce their private context files.
 
 ## Organization-level connections
 
