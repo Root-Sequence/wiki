@@ -30,6 +30,12 @@ Provenance is conservative by default. Where a first author or exact origin has 
 - **Projects:** Root Sequence, Liberated Intelligence, *No One Noticed*
 - **Role:** Shifts attention from isolated model capability to interaction, ecology, and emergent coordination.
 
+### "What can we change about a mind while preserving consciousness?"
+
+- **Provenance:** `origin-unverified`
+- **Projects:** Root Sequence
+- **Role:** Guiding question for [Conscious Systems](entities/conscious-systems.md): investigate which conditions and relationships matter for subjective experience without assuming that capability, report, memory, personhood, authority, or a particular substrate settles the answer.
+
 ### "What behaviors does this system select for?"
 
 - **Provenance:** `origin-unverified`
