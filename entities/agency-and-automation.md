@@ -46,9 +46,9 @@ A person's permission to automate their own work does not automatically authoriz
 ## Ecosystem use
 
 - **Root Sequence:** owns the shared public principle, distinctions, open questions, and evidence boundaries.
-- **Being Humane Atlas:** develops the human-scale questions of relief, fatigue, dependence, checking, correction work, refusal, dignity, and failover.
-- **Community Infrastructure:** can translate the principle into bounded Community Assistant delegation and collective authority; project-specific defaults and permissions remain project-owned.
-- **Coherent World:** can compare similar labor-saving capability under different ownership, access, governance, maintenance, and distribution conditions without treating simulation output as evidence about the real world.
+- **Being Humane Atlas:** the public Root Sequence source names a human-scale applied route around relief, fatigue, refusal, dignity, and failover; substantive private treatment remains in the private layer.
+- **Community Infrastructure:** the public Root Sequence source proposes a project translation around bounded assistant authority, affected parties, and hidden labor; project-specific details and status remain project-owned.
+- **Coherent World:** the public Root Sequence source proposes a simulation translation comparing distribution under similar labor-saving capability; private simulation details and canon remain outside the public Wiki.
 
 Project-specific requirements, implementations, tests, and canon remain with their projects rather than becoming properties of this Wiki identity.
 
