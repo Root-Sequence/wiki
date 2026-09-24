@@ -9,8 +9,7 @@ provenance_confidence: high
 visibility: public
 projects:
   - Root Sequence
-aliases:
-  - design grammar
+aliases: []
 related:
   - agency-and-automation
   - legible-systems
@@ -49,7 +48,7 @@ The generated Idea Trail views remain derived navigation; they do not become com
 
 The artifact was added to the public Root Sequence default branch on September 24, 2026 as an AI-assisted working synthesis awaiting author review. It is normative and organizational, not a validated theory or evidence that every Root Sequence project already implements every recurring move.
 
-`project-origin` records the provenance of this Root Sequence artifact and its current formalization. It is not a claim that the generic phrase “design grammar” was coined by Root Sequence.
+`project-origin` records the provenance of this Root Sequence artifact and its current formalization. It is not a claim that the generic phrase “design grammar” was coined by Root Sequence, so no generic `design grammar` alias is registered.
 
 ## Canonical substantive home
 
