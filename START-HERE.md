@@ -4,7 +4,7 @@
 
 <!-- START-HERE-META
 format: 1
-review_sources: README.md, ARCHITECTURE.md, PRIVATE_OVERLAY.md, LEXICON.md, PHRASES.md, PROJECTS.md
+review_sources: README.md, PROJECT-CONTEXT.md, PROJECTS.md, PROJECT_CONTEXTS.md, ARCHITECTURE.md, AUTOMATION.md, AUTO_PROJECTS.md, PRIVATE_OVERLAY.md, PROVENANCE.md, LEXICON.md, PHRASES.md
 review_when: schema, public/private architecture, navigation, publication, or entity-routing changes
 END-START-HERE-META -->
 
@@ -28,7 +28,9 @@ The repository contains a public knowledge graph, site, lexicon, phrases, projec
 
 - `entities/` — public entities with stable identities and relationships.
 - [`LEXICON.md`](LEXICON.md) and [`PHRASES.md`](PHRASES.md) — navigable vocabulary and recurring language.
-- [`PROJECTS.md`](PROJECTS.md) — project index and relationships.
+- [`PROJECTS.md`](PROJECTS.md) — curated project meaning and relationships.
+- [`PROJECT_CONTEXTS.md`](PROJECT_CONTEXTS.md) — rollout-aware links to merged repository briefings.
+- [`AUTO_PROJECTS.md`](AUTO_PROJECTS.md) — machine-maintained public repository discovery.
 - [`ARCHITECTURE.md`](ARCHITECTURE.md) — data and site architecture.
 - [`PRIVATE_OVERLAY.md`](PRIVATE_OVERLAY.md) — how private context extends the public base without leaking into it.
 
@@ -45,4 +47,4 @@ Root Sequence and its sibling projects own arguments, designs, implementations, 
 
 ## Go deeper
 
-Read the full [README](README.md) and [Wiki Architecture](ARCHITECTURE.md). If an entry becomes the argument itself, it has probably outgrown the Wiki.
+Read the full [README](README.md), [Project Context Index](PROJECT_CONTEXTS.md), and [Wiki Architecture](ARCHITECTURE.md). If an entry becomes the argument itself, it has probably outgrown the Wiki.

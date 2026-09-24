@@ -22,13 +22,14 @@ It is not a second conceptual commons, implementation repository, fiction canon,
 | One-Wiki/many-views architecture | [`ARCHITECTURE.md`](ARCHITECTURE.md) |
 | Automation and review boundaries | [`AUTOMATION.md`](AUTOMATION.md) |
 | Curated project meaning | [`PROJECTS.md`](PROJECTS.md) |
+| Availability of merged repository briefings | [`PROJECT_CONTEXTS.md`](PROJECT_CONTEXTS.md) |
 | Live public repository discovery | [`AUTO_PROJECTS.md`](AUTO_PROJECTS.md) |
 | Public/private layer contract | [`PRIVATE_OVERLAY.md`](PRIVATE_OVERLAY.md) |
 | Provenance rules | [`PROVENANCE.md`](PROVENANCE.md) |
 
 ## Current reality
 
-The repository contains public entities, indexes, a generated site/knowledge graph, project lenses, automation, validation, and a daily public-repository registry. Generated overlap and maintenance signals are review cues, not facts. Private context exists in a separate overlay and is never required by the public build.
+The repository contains public entities, indexes, a generated site/knowledge graph, project lenses, automation, validation, a daily public-repository registry, and a curated index of repository briefings. The context index links only to files already merged on each repository's default branch; rollout proposals remain labeled as pending. Generated overlap and maintenance signals are review cues, not facts. Private context exists in a separate overlay and is never required by the public build.
 
 ## Repository structure
 
