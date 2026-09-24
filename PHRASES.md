@@ -30,6 +30,12 @@ Provenance is conservative by default. Where a first author or exact origin has 
 - **Projects:** Root Sequence, Liberated Intelligence, *No One Noticed*
 - **Role:** Shifts attention from isolated model capability to interaction, ecology, and emergent coordination.
 
+### "What can we change about a mind while preserving consciousness?"
+
+- **Provenance:** `origin-unverified`
+- **Projects:** Root Sequence
+- **Role:** Guiding question for [Conscious Systems](entities/conscious-systems.md): investigate which conditions and relationships matter for subjective experience without assuming that capability, report, memory, personhood, authority, or a particular substrate settles the answer.
+
 ### "What behaviors does this system select for?"
 
 - **Provenance:** `origin-unverified`
@@ -113,6 +119,12 @@ Provenance is conservative by default. Where a first author or exact origin has 
 - **Provenance:** `project-origin`
 - **Projects:** Root Sequence, Root Sequence Wiki
 - **Role:** Cross-project routing rule: let one project own the underlying substance while other projects transform the question deliberately instead of duplicating it.
+
+### "Coherence without duplication."
+
+- **Provenance:** `origin-unverified`
+- **Projects:** Root Sequence, Liberated Intelligence, Universal Coherence Framework, Liberation Mass
+- **Role:** Documentation and stewardship rule: make material changes discoverable from the right entry points while keeping detailed substance canonical in one appropriate place. See [Cognitive On-Ramp](entities/cognitive-on-ramp.md), [Project Stewardship](entities/project-stewardship.md), and [Root Sequence Thought Routing](entities/rs-thought-routing.md).
 
 ### "Being Human(e) notices. Human(e) Design translates. Implementation tests."
 
