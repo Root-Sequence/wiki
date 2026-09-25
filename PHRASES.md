@@ -144,6 +144,18 @@ Provenance is conservative by default. Where a first author or exact origin has 
 - **Projects:** Root Sequence
 - **Role:** Core [Legible AI-Assisted Expression](entities/legible-ai-assisted-expression.md) principle: assistance can lower the burden of externalizing and organizing thought while keeping contribution provenance, transformations, support, uncertainty, and decisions visible.
 
+### "Automate necessity. Preserve possibility."
+
+- **Provenance:** `origin-unverified`
+- **Projects:** Root Sequence
+- **Role:** Provisional [Agency and Automation](entities/agency-and-automation.md) shorthand: reduce unwanted or compulsory burdens without treating automation as a universal endpoint or removing meaningful participation, delegation, refusal, inspection, recovery, and contestability.
+
+### "Socialize vulnerability; internalize responsibility."
+
+- **Provenance:** `origin-unverified`
+- **Projects:** Root Sequence
+- **Role:** Compact [Externalized Responsibility](entities/externalized-responsibility.md) motif: share unavoidable vulnerability while reconnecting preventable harm, feedback, and repair obligations to actors with relevant causal power and capacity.
+
 ### "No critical human need should depend unnecessarily on a single technology, institution, interface, or skill path."
 
 - **Provenance:** `project-origin`
@@ -167,6 +179,25 @@ Provenance is conservative by default. Where a first author or exact origin has 
 - **Provenance:** `origin-unverified`
 - **Projects:** Root Sequence, Universal Coherence Framework
 - **Role:** [False Coherence](entities/false-coherence.md) guardrail: visible agreement is not sufficient evidence of coherence, and durable disagreement or plurality is not itself evidence of incoherence.
+
+
+### "More routing and less totalization."
+
+- **Provenance:** origin-unverified
+- **Projects:** Root Sequence
+- **Role:** Methodological guardrail from the September 24 related-work and pilot review: cross-domain synthesis should connect consequential questions while handing mechanism-level analysis back to competent native methods.
+
+### "What happens to a system can change how later things happen to it."
+
+- **Provenance:** origin-unverified
+- **Projects:** Root Sequence
+- **Role:** [Dynamic Coherence and Adaptive Continuity](entities/dynamic-coherence-adaptive-continuity.md) motif for path dependence and transition dynamics: history can alter not only current state but how later states are generated.
+
+### "A good answer should increase the person's capacity to discover the next good question."
+
+- **Provenance:** origin-unverified
+- **Projects:** Root Sequence
+- **Role:** [Epistemic Discoverability and Knowledge Routing](entities/epistemic-discoverability-knowledge-routing.md) principle: useful assistance should expand the person's ability to continue inquiry rather than making the answer or router a permanent gatekeeper.
 
 ## Department of Extremely Serious Terminology
 

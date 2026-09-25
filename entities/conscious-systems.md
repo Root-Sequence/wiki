@@ -57,16 +57,18 @@ A useful contribution can therefore be a sharper distinction, a source correctio
 
 ## Provenance and review boundary
 
-The research area's guiding question and whole-system intuition were recorded as coming from the initiating discussion. Follow-up distinctions concerning experience, memory, traces, the subconscious, dying, death, and recoverability were developed through author clarification and AI-assisted synthesis. The project structure, literature selection, theory mapping, and proposed tests remain reviewable and should not be attributed as settled author conclusions.
+The research area's guiding question and whole-system intuition were recorded as coming from the initiating discussion. Follow-up distinctions concerning experience, memory, traces, the subconscious, dying, death, recoverability, developmental boundaries, and divided access were developed through author clarification and AI-assisted synthesis. The project structure, literature selection, theory mapping, source extraction, and proposed tests remain reviewable and should not be attributed as settled author conclusions.
 
 The phrase **Conscious Systems** is used here as the stable project identity; this Wiki entry does not claim historical originality for the phrase itself.
 
 ## Current frontier
 
-The merged area now prioritizes evidence quality and methods-level extraction over adding more conceptual matrices. A September 23 follow-up on developmental origins, split-brain access, and subject unity remains a draft review path until merged and should not be treated as settled Wiki substance.
+A September 23–24 follow-up on developmental origins and split-brain conscious unity is now merged into the public research area. It explicitly separates developmental or access boundaries from claims about the number of conscious subjects and adds a bounded extraction of Pinto et al. (2017) rather than treating split-brain findings as a simple demonstration of two independent conscious minds.
+
+That update remains an evidence audit, not new experimental data or scientific validation. The cueing debate, fuller supplementary-statistics review, and broader methods-level comparison remain outstanding, and the interpretations still await author review. The research frontier therefore continues to emphasize source quality, inference limits, and discriminating evidence rather than expanding the theory map for its own sake.
 
 ## Canonical substantive home
 
-The index, open-question ledger, candidate-theory comparisons, stress tests, evidence matrices, source extractions, system-boundary work, and research-quality checkpoint live in [`Root-Sequence/root-sequence/research/conscious-systems/`](https://github.com/Root-Sequence/root-sequence/tree/main/research/conscious-systems).
+The index, open-question ledger, candidate-theory comparisons, stress tests, evidence matrices, source extractions, system-boundary work, developmental/split-brain audit, and research-quality checkpoint live in [`Root-Sequence/root-sequence/research/conscious-systems/`](https://github.com/Root-Sequence/root-sequence/tree/main/research/conscious-systems).
 
 The Wiki keeps the stable identity, compact scope, status boundary, relationships, provenance, and canonical route.

@@ -15,6 +15,8 @@ aliases:
 related:
   - graph-not-filing-cabinet
   - rs-thought-routing
+  - dynamic-coherence-adaptive-continuity
+  - epistemic-discoverability-knowledge-routing
 canonical: https://github.com/Root-Sequence/root-sequence/blob/main/concepts/root-sequence.md
 first_known: unknown
 first_known_source: "Early Root Sequence project materials; exact first-known naming record has not yet been verified."
@@ -37,7 +39,7 @@ Sequences can also become roots: an outcome becomes part of the conditions for w
 ## Ecosystem use
 
 - **Root Sequence:** the organization-wide ecosystem of related research, practice, infrastructure, speculative, narrative, and reference projects.
-- **`Root-Sequence/root-sequence`:** the public conceptual commons and broadest research entry point, not the whole ecosystem.
+- **`Root-Sequence/root-sequence`:** the public conceptual commons, broadest research entry point, and developing routing/synthesis layer—not the whole ecosystem and not a replacement discipline.
 - **Root Sequence Wiki:** the shared terminology, provenance, relationship, and navigation layer.
 
 The stylings **`[root]sequence`** and **`root://sequence`** refer to the same name. They do not identify separate projects or technical protocols.
@@ -47,6 +49,8 @@ The stylings **`[root]sequence`** and **`root://sequence`** refer to the same na
 The name does not assert that every system has one deepest root, one universal sequence, or one master framework. It does not require every project to adopt the early Liberation Cycle or ecological project-cycle metaphor.
 
 Those founding formulations remain historically relevant, but current usage is broader: tracing underlying conditions, unfolding processes, consequences, recursion, and possible alternatives across distinct domains.
+
+September 24 related-work review and editorial method pilots sharpened a further boundary: cross-domain synthesis should route questions toward established fields and methods rather than silently replacing them. The public source summarizes this as **more routing and less totalization**. The pilot evidence is narrow and editorial, so it supports a project-method boundary rather than validating Root Sequence itself as a general research method.
 
 ## Provenance
 
