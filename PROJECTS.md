@@ -22,6 +22,14 @@ For consistent repository-level briefings, use the [`START-HERE.md` / `PROJECT-C
 | **Root Sequence Discussions** | Cross-project questions and coordination | [`Root-Sequence/root-sequence-discussions`](https://github.com/Root-Sequence/root-sequence-discussions) |
 | **Good Chaos** | Fictional music project / band | [`Root-Sequence/good-chaos-music`](https://github.com/Root-Sequence/good-chaos-music) |
 
+## Public seeds and proposed projects
+
+| Project | Role | Current / intended home |
+| --- | --- | --- |
+| **Commons of Inquiry & Creation** | Proposed residential commons for inquiry, creation, experimentation, and ordinary life | [Temporary public bootstrap seed](https://github.com/Root-Sequence/root-sequence/tree/main/incubator/commons-of-inquiry); intended standalone home: `Root-Sequence/commons-of-inquiry` (not yet established) |
+
+This row records an intentionally public seed, not an operating institution, validated model, permanent nested project, or transfer of community governance to Root Sequence.
+
 ## Shortest mental model
 
 > **Root Sequence discovers. Community Infrastructure tests. Coherent World designs. No One Noticed experiences. The Museum of Ordinary Life preserves.**
