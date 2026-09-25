@@ -180,6 +180,25 @@ Provenance is conservative by default. Where a first author or exact origin has 
 - **Projects:** Root Sequence, Universal Coherence Framework
 - **Role:** [False Coherence](entities/false-coherence.md) guardrail: visible agreement is not sufficient evidence of coherence, and durable disagreement or plurality is not itself evidence of incoherence.
 
+
+### "More routing and less totalization."
+
+- **Provenance:** origin-unverified
+- **Projects:** Root Sequence
+- **Role:** Methodological guardrail from the September 24 related-work and pilot review: cross-domain synthesis should connect consequential questions while handing mechanism-level analysis back to competent native methods.
+
+### "What happens to a system can change how later things happen to it."
+
+- **Provenance:** origin-unverified
+- **Projects:** Root Sequence
+- **Role:** [Dynamic Coherence and Adaptive Continuity](entities/dynamic-coherence-adaptive-continuity.md) motif for path dependence and transition dynamics: history can alter not only current state but how later states are generated.
+
+### "A good answer should increase the person's capacity to discover the next good question."
+
+- **Provenance:** origin-unverified
+- **Projects:** Root Sequence
+- **Role:** [Epistemic Discoverability and Knowledge Routing](entities/epistemic-discoverability-knowledge-routing.md) principle: useful assistance should expand the person's ability to continue inquiry rather than making the answer or router a permanent gatekeeper.
+
 ## Department of Extremely Serious Terminology
 
 ### "I see patterns and they look sign-shaped."
