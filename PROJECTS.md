@@ -8,7 +8,7 @@ For consistent repository-level briefings, use the [`START-HERE.md` / `PROJECT-C
 
 | Project | Role | Canonical home |
 | --- | --- | --- |
-| **Root Sequence** | Umbrella inquiry and conceptual commons | [`Root-Sequence/root-sequence`](https://github.com/Root-Sequence/root-sequence) |
+| **Root Sequence** | Transdisciplinary inquiry, synthesis, and design router; conceptual commons | [`Root-Sequence/root-sequence`](https://github.com/Root-Sequence/root-sequence) |
 | **Root Sequence Wiki** | Ecosystem vocabulary, provenance, aliases, relationships, and conceptual archaeology | [`Root-Sequence/wiki`](https://github.com/Root-Sequence/wiki) |
 | **Liberated Intelligence** | Intelligence, agency, ownership, non-domination, liberation | [`Root-Sequence/liberated-intelligence`](https://github.com/Root-Sequence/liberated-intelligence) |
 | **Universal Coherence Framework** | Cross-domain vocabulary for coherence, interpretation, tension, evidence, and flow | [`Root-Sequence/universal-coherence-framework`](https://github.com/Root-Sequence/universal-coherence-framework) |
@@ -16,7 +16,7 @@ For consistent repository-level briefings, use the [`START-HERE.md` / `PROJECT-C
 | **Being Humane Atlas** | Private atlas / synthesis workspace for Being Human(e)-adjacent material | [`Root-Sequence/beinghumane-atlas`](https://github.com/Root-Sequence/beinghumane-atlas) |
 | **Liberation Mass** | Gathering, ritual, commons, shared practice, participation, stewardship | [`Root-Sequence/liberation-mass`](https://github.com/Root-Sequence/liberation-mass) |
 | **Community Infrastructure** | Community-controlled digital commons and coordination infrastructure | [`Root-Sequence/community-infrastructure`](https://github.com/Root-Sequence/community-infrastructure) |
-| **Coherent World** | Private systemic design space for a more coherent civilization | [`Root-Sequence/coherent-world`](https://github.com/Root-Sequence/coherent-world) |
+| **Coherent World** | Private recombination and consequence laboratory for interacting mechanisms in possible futures | [`Root-Sequence/coherent-world`](https://github.com/Root-Sequence/coherent-world) |
 | **No One Noticed** | Narrative expression of Coherent World | private Coherent World workspace + public site |
 | **Museum of Ordinary Life** | Autonomous real-world archive of ordinary life | autonomous project |
 | **Root Sequence Discussions** | Cross-project questions and coordination | [`Root-Sequence/root-sequence-discussions`](https://github.com/Root-Sequence/root-sequence-discussions) |
@@ -32,7 +32,7 @@ This row records an intentionally public seed, not an operating institution, val
 
 ## Shortest mental model
 
-> **Root Sequence discovers. Community Infrastructure tests. Coherent World designs. No One Noticed experiences. The Museum of Ordinary Life preserves.**
+> **Root Sequence routes and synthesizes. Native fields explain mechanisms. Real-world projects design and test. Coherent World recombines and simulates. No One Noticed makes transition lived. The Museum of Ordinary Life preserves.**
 
 Being Human(e), Liberated Intelligence, UCF, Liberation Mass, Good Chaos, the Wiki, and other projects cross that path rather than fitting into one linear sequence.
 
