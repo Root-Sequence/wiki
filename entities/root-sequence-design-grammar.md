@@ -14,6 +14,8 @@ related:
   - agency-and-automation
   - legible-systems
   - intelligence-ecology
+  - dynamic-coherence-adaptive-continuity
+  - epistemic-discoverability-knowledge-routing
   - rs-thought-routing
   - bounded-structure
 canonical: https://github.com/Root-Sequence/root-sequence/blob/main/concepts/design-grammar.md
@@ -40,6 +42,8 @@ It is deliberately compatible with different local answers. More provenance can 
 - **Agency and Automation** supplies the shared treatment of chosen participation, bounded delegation, affected-party authority, labor distribution, and recovery.
 - **Legible Systems** supplies questions about understandable behavior, progressive technical depth, interoperability, and changeability.
 - **Intelligence Ecology** supplies the selection-environment question around incentives, permissions, ownership, and surrounding conditions.
+- **Dynamic Coherence and Adaptive Continuity** supplies the question of what should remain stable, what must remain changeable, and which future actions a decision opens or closes.
+- **Epistemic Discoverability and Knowledge Routing** supplies the question of whether someone can reach the concepts, fields, methods, and sources they need before mastering expert vocabulary.
 - **Root Sequence Thought Routing** supplies the provenance and canonical-home method for moving from a shared question to deliberate project-specific transformations.
 
 The generated Idea Trail views remain derived navigation; they do not become competing canonical definitions.
