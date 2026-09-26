@@ -51,7 +51,7 @@ A durable design objective is therefore to let inquiry evolve visibly: new terms
 - **Legible AI-Assisted Expression:** AI-supported synthesis should preserve sources, transformations, uncertainty, and the route for continued independent inquiry.
 - **Root Sequence Design Grammar:** “make knowledge discoverable before vocabulary is mastered” is now an explicit recurring design move.
 
-The current Root Sequence **Reading Trails** are a lightweight implementation pattern for this concept, but their substantive content remains in the research repository rather than being duplicated here.
+Root Sequence **Reading Trails** are now a concrete bidirectional implementation pattern for this concept: a project question can lead to a trail, while wandering a trail can surface a new project question. The September 25 routing guide keeps source evidence separate from local adoption and routes checked distinctions into bounded inquiries, project changes, tests, corrections, or explicit non-adoption. Their substantive trail content remains in the research repository rather than being duplicated here.
 
 ## Boundaries
 

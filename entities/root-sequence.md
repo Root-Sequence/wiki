@@ -39,7 +39,7 @@ Sequences can also become roots: an outcome becomes part of the conditions for w
 ## Ecosystem use
 
 - **Root Sequence:** the organization-wide ecosystem of related research, practice, infrastructure, speculative, narrative, and reference projects.
-- **`Root-Sequence/root-sequence`:** the public conceptual commons, broadest research entry point, and developing routing/synthesis layer—not the whole ecosystem and not a replacement discipline.
+- **`Root-Sequence/root-sequence`:** the public conceptual commons and transdisciplinary research-and-design router. It decomposes cross-field questions, routes mechanisms to relevant disciplines and methods, reconnects findings where the relationship survives, and translates useful results without becoming the whole ecosystem or a replacement discipline.
 - **Root Sequence Wiki:** the shared terminology, provenance, relationship, and navigation layer.
 
 The stylings **`[root]sequence`** and **`root://sequence`** refer to the same name. They do not identify separate projects or technical protocols.

@@ -75,7 +75,7 @@ Provenance is conservative by default. Where a first author or exact origin has 
 ### "Graph, not filing cabinet."
 
 - **Provenance:** `origin-unverified`
-- **Projects:** Root Sequence, RaeLog
+- **Projects:** Root Sequence, Raelog
 - **Role:** Knowledge organization by relationships rather than exclusive containers.
 
 ### "Recursive, not rigid."
@@ -180,7 +180,6 @@ Provenance is conservative by default. Where a first author or exact origin has 
 - **Projects:** Root Sequence, Universal Coherence Framework
 - **Role:** [False Coherence](entities/false-coherence.md) guardrail: visible agreement is not sufficient evidence of coherence, and durable disagreement or plurality is not itself evidence of incoherence.
 
-
 ### "More routing and less totalization."
 
 - **Provenance:** origin-unverified
@@ -198,6 +197,18 @@ Provenance is conservative by default. Where a first author or exact origin has 
 - **Provenance:** origin-unverified
 - **Projects:** Root Sequence
 - **Role:** [Epistemic Discoverability and Knowledge Routing](entities/epistemic-discoverability-knowledge-routing.md) principle: useful assistance should expand the person's ability to continue inquiry rather than making the answer or router a permanent gatekeeper.
+
+### "Reading Trails are entrances, not endpoints."
+
+- **Provenance:** `origin-unverified`
+- **Projects:** Root Sequence
+- **Role:** [Epistemic Discoverability and Knowledge Routing](entities/epistemic-discoverability-knowledge-routing.md) motif: a trail can be entered from an existing question or can expose a new one, but discovery still has to pass through source checking, bounded translation, and revision rather than becoming evidence or adoption by proximity.
+
+### "Connect boldly. Claim cautiously. Route mechanisms to the people and fields that know them best. Build the synthesis so it can survive being wrong."
+
+- **Provenance:** `origin-unverified`
+- **Projects:** Root Sequence
+- **Role:** Research-method guardrail: preserve generative cross-domain connections while requiring domain-native methods, competing explanations, competent baselines, null results, and visible narrowing or retirement when a synthesis fails.
 
 ## Department of Extremely Serious Terminology
 
