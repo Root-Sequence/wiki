@@ -9,6 +9,7 @@ For consistent repository-level briefings, use the [`START-HERE.md` / `PROJECT-C
 | Project | Role | Canonical home |
 | --- | --- | --- |
 | **Root Sequence** | Transdisciplinary inquiry, synthesis, and design router; conceptual commons | [`Root-Sequence/root-sequence`](https://github.com/Root-Sequence/root-sequence) |
+| **Existential Euphoria** | In-formation aesthetic and experiential framework for existence, contradiction, interdependence, and possibility | [`Root-Sequence/existential-euphoria`](https://github.com/Root-Sequence/existential-euphoria) |
 | **Root Sequence Wiki** | Ecosystem vocabulary, provenance, aliases, relationships, and conceptual archaeology | [`Root-Sequence/wiki`](https://github.com/Root-Sequence/wiki) |
 | **Liberated Intelligence** | Intelligence, agency, ownership, non-domination, liberation | [`Root-Sequence/liberated-intelligence`](https://github.com/Root-Sequence/liberated-intelligence) |
 | **Universal Coherence Framework** | Cross-domain vocabulary for coherence, interpretation, tension, evidence, and flow | [`Root-Sequence/universal-coherence-framework`](https://github.com/Root-Sequence/universal-coherence-framework) |
