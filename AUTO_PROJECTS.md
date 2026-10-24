@@ -9,10 +9,9 @@ Private repositories are intentionally excluded from this automatic registry.
 | [.github](https://github.com/Root-Sequence/.github) | Organization-wide contribution guidance, workflow templates, profile content, and repository-stewardship policy for Root Sequence. | active | `main` |
 | [beinghumane-guide](https://github.com/Root-Sequence/beinghumane-guide) | A living field guide to being human(e) — observations, patterns, and notes. | active | `main` |
 | [existential-euphoria](https://github.com/Root-Sequence/existential-euphoria) | Exploring awe, contradiction, interconnection, and the possibility of living more humanely—through music, art, ideas, and ordinary life. | active | `main` |
-| [liberation-mass](https://github.com/Root-Sequence/liberation-mass) | Liberation Mass is a welcoming, community-run gathering. We meet to care for each other, learn practical skills, explore science and reality, make/experience art and music, share food, and dance. Everything is optional, consent-based, and open to remix. Come as you are; leave with support, tools, and friends/community. | active | `main` |
-| [root-sequence](https://github.com/Root-Sequence/root-sequence) | A living, open-source inquiry into how intelligence, systems, and meaning evolve together. | active | `main` |
+| [root-sequence](https://github.com/Root-Sequence/root-sequence) | Independent interdisciplinary research exploring how intelligence, technology, and social systems shape one another. | active | `main` |
 | [root-sequence-discussions](https://github.com/Root-Sequence/root-sequence-discussions) | Central hub for organization-wide discussions, updates, planning, and cross-project coordination within root://sequence | active | `main` |
-| [universal-coherence-framework](https://github.com/Root-Sequence/universal-coherence-framework) | A cross-domain model for coherence state dynamics in biological, artificial, collective, and ecological systems. | active | `main` |
+| [universal-coherence-framework](https://github.com/Root-Sequence/universal-coherence-framework) | Exploratory framework for comparing how systems hold together or change; AI-assisted model under author review. | active | `main` |
 | [wiki](https://github.com/Root-Sequence/wiki) | A living map of Root Sequence ideas, language, projects, relationships, and canonical homes. | active | `main` |
 
 ## Why this is separate from the curated project map

@@ -16,7 +16,6 @@ The project context is not a duplicate canon. It identifies the canonical docume
 | Root Sequence | [Start](https://github.com/Root-Sequence/root-sequence/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/root-sequence/blob/main/PROJECT-CONTEXT.md) |
 | Universal Coherence Framework | [Start](https://github.com/Root-Sequence/universal-coherence-framework/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/universal-coherence-framework/blob/main/PROJECT-CONTEXT.md) |
 | Being Human(e) | [Start](https://github.com/Root-Sequence/beinghumane-guide/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/beinghumane-guide/blob/main/PROJECT-CONTEXT.md) |
-| Liberation Mass | [Start](https://github.com/Root-Sequence/liberation-mass/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/liberation-mass/blob/main/PROJECT-CONTEXT.md) |
 | Root Sequence Discussions | [Start](https://github.com/Root-Sequence/root-sequence-discussions/blob/main/START-HERE.md) | [Context](https://github.com/Root-Sequence/root-sequence-discussions/blob/main/PROJECT-CONTEXT.md) |
 
 ## Pending public rollout
@@ -25,7 +24,7 @@ No tracked public rollout proposals remain pending from this rollout. Move futur
 
 ## Private project contexts
 
-The same two-file interface is proposed for `liberated-intelligence`, `beinghumane-atlas`, `community-infrastructure`, `coherent-world`, `coherent-computing`, `good-chaos-music`, and `wiki-private`. The public Wiki records only their intentionally disclosed roles; it does not inspect, verify, link to, or reproduce their private context files.
+The same two-file interface is proposed for `liberated-intelligence`, `liberation-mass`, `beinghumane-atlas`, `community-infrastructure`, `coherent-world`, `coherent-computing`, `good-chaos-music`, and `wiki-private`. The public Wiki records only their intentionally disclosed roles; it does not inspect, verify, link to, or reproduce their private context files.
 
 ## Organization-level connections
 
