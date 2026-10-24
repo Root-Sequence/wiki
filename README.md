@@ -42,3 +42,7 @@ The Wiki helps answer:
 - How has it changed over time?
 
 If you need the complete argument, design, implementation, or canon, follow the canonical project link from here.
+
+## Finding collaboration principles
+
+The [commons collaboration proposal](https://github.com/Root-Sequence/root-sequence/blob/main/commons/README.md#collaboration-as-a-living-experiment) is maintained in the public conceptual commons. Follow that home for the proposed collaboration practices. The Wiki keeps the route to their source; each project retains its own decisions and privacy boundaries.
