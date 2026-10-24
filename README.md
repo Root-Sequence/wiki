@@ -45,4 +45,4 @@ If you need the complete argument, design, implementation, or canon, follow the 
 
 ## Finding collaboration principles
 
-The [commons collaboration proposal](https://github.com/Root-Sequence/root-sequence/blob/main/commons/README.md#collaboration-as-a-living-experiment) is maintained in the public conceptual commons. Follow that home for bounded openness, dissent, accountable powers, voluntary repair, maintenance, and revision. The Wiki supplies navigation; it does not create a second charter, project governance, or permission to publish private context.
+The [commons collaboration proposal](https://github.com/Root-Sequence/root-sequence/blob/main/commons/README.md#collaboration-as-a-living-experiment) is maintained in the public conceptual commons. Follow that home for the proposed collaboration practices. The Wiki keeps the route to their source; each project retains its own decisions and privacy boundaries.
