@@ -10,7 +10,7 @@ For consistent repository-level briefings, use the [`START-HERE.md` / `PROJECT-C
 | --- | --- | --- |
 | **Root Sequence** | Transdisciplinary inquiry, synthesis, and design router; conceptual commons | [`Root-Sequence/root-sequence`](https://github.com/Root-Sequence/root-sequence) |
 | **Root Sequence Wiki** | Ecosystem vocabulary, provenance, aliases, relationships, and conceptual archaeology | [`Root-Sequence/wiki`](https://github.com/Root-Sequence/wiki) |
-| **Liberated Intelligence** | Intelligence, agency, ownership, non-domination, liberation | [`Root-Sequence/liberated-intelligence`](https://github.com/Root-Sequence/liberated-intelligence) |
+| **Liberated Intelligence** | Intelligence, agency, ownership, non-domination, liberation | Private working repository; public role summarized here |
 | **Universal Coherence Framework** | Cross-domain vocabulary for coherence, interpretation, tension, evidence, and flow | [`Root-Sequence/universal-coherence-framework`](https://github.com/Root-Sequence/universal-coherence-framework) |
 | **Being Human(e)** | Grounded human observation, care, harm, repair, and humane practice | [`Root-Sequence/beinghumane-guide`](https://github.com/Root-Sequence/beinghumane-guide) |
 | **Being Humane Atlas** | Private atlas / synthesis workspace for Being Human(e)-adjacent material | [`Root-Sequence/beinghumane-atlas`](https://github.com/Root-Sequence/beinghumane-atlas) |
