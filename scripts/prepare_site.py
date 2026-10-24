@@ -23,6 +23,9 @@ ENTITY_DIR = ROOT / "entities"
 
 PAGES = {
     "README.md": ("index.md", "Home"),
+    "START-HERE.md": ("start-here.md", "Start Here"),
+    "PROJECT-CONTEXT.md": ("project-context.md", "Wiki Project Context"),
+    "PROJECT_CONTEXTS.md": ("project-contexts.md", "Project Context Index"),
     "LEXICON.md": ("lexicon.md", "Lexicon"),
     "PHRASES.md": ("phrases.md", "Phrases & Motifs"),
     "PROJECTS.md": ("projects.md", "Projects"),

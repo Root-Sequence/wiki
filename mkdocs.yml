@@ -9,6 +9,7 @@ use_directory_urls: true
 
 nav:
   - Home: index.md
+  - Start Here: start-here.md
   - Explore:
       - Entities: entities/index.md
       - Lexicon: lexicon.md
@@ -16,10 +17,12 @@ nav:
       - Seeds: seeds.md
   - Projects:
       - Project Index: projects.md
+      - Project Context Index: project-contexts.md
       - Project Lenses: lenses/index.md
       - Public Repository Registry: auto-projects.md
   - Knowledge Graph: graph.md
   - About:
+      - Wiki Project Context: project-context.md
       - Wiki Architecture: architecture.md
       - Public + Private Layers: PRIVATE_OVERLAY.md
       - Provenance: provenance.md

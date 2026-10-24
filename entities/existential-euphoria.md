@@ -51,7 +51,7 @@ These are provisional intersections for inquiry. Project metadata makes them dis
 | Liberation Mass | Shared practice and gathering without requiring a common emotional state. |
 | Museum of Ordinary Life | Attention to ordinary existence and lives already being lived, without requiring grandeur. |
 
-The connections beyond Rae's explicit Root Sequence and BHIG statements are AI-assisted proposals grounded in the public [Project Index](../PROJECTS.md), not evidence of project adoption or descriptions of private designs.
+The connections beyond Rae's explicit Root Sequence and BHIG statements are AI-assisted proposals grounded in the public [Project Index](https://github.com/Root-Sequence/wiki/blob/main/PROJECTS.md), not evidence of project adoption or descriptions of private designs.
 
 ## Related identities and boundaries
 
