@@ -33,9 +33,9 @@ A public Root Sequence living paper, currently at `v0.1-dev`, examining what mus
 
 ## Current status
 
-The paper began on September 16, 2026 as an AI-assisted research scaffold. Its canonical source was rescued onto the reorganized repository structure and merged to `main` on September 18, 2026 at [`research/papers/coherent-systems/`](https://github.com/Root-Sequence/root-sequence/tree/main/research/papers/coherent-systems).
+The paper began on September 16, 2026 as a research scaffold. Its canonical source was rescued onto the reorganized repository structure and merged to `main` on September 18, 2026 at [`research/papers/coherent-systems/`](https://github.com/Root-Sequence/root-sequence/tree/main/research/papers/coherent-systems).
 
-That merge establishes the durable source location; it does **not** establish a reviewed release. The manuscript remains `v0.1-dev`, author review is pending, it is not peer reviewed, no DOI exists, and no reader-facing website publication has been approved.
+That merge establishes the durable source location; it does **not** establish a reviewed release. The manuscript remains `v0.1-dev`, it is not peer reviewed, no DOI exists, and no reader-facing website publication has been approved.
 
 ## Scope
 

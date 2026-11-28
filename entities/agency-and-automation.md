@@ -56,11 +56,11 @@ Project-specific requirements, implementations, tests, and canon remain with the
 
 The concept does not claim that automation automatically creates free time, material security, equality, or meaningful work. Those outcomes depend on ownership, governance, transition costs, ecological limits, maintenance, bargaining power, access to essentials, and the distribution of gains and losses.
 
-The public source is explicitly an AI-assisted working principle awaiting author review. Its modes, safeguards, and compact wording are proposals rather than empirically validated universal rules.
+The public source is explicitly a working principle. Its modes, safeguards, and compact wording are proposals rather than empirically validated universal rules.
 
 ## Provenance
 
-The durable Root Sequence treatment was formalized publicly on September 24, 2026 after a discussion about balancing automation of unwanted or compulsory burdens with chosen activity, limited energy, meaningful participation, and the possibility of delegation. The source records the author's direction separately from AI-assisted synthesis of modes, safeguards, and wording.
+The durable Root Sequence treatment was formalized publicly on September 24, 2026 after a discussion about balancing automation of unwanted or compulsory burdens with chosen activity, limited energy, meaningful participation, and the possibility of delegation. The source records the author's direction separately from synthesis of modes, safeguards, and wording.
 
 The title and shorthand remain `origin-unverified`; this Wiki entry does not claim historical originality for either phrase.
 

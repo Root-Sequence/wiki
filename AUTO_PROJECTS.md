@@ -11,7 +11,7 @@ Private repositories are intentionally excluded from this automatic registry.
 | [existential-euphoria](https://github.com/Root-Sequence/existential-euphoria) | Exploring awe, contradiction, interconnection, and the possibility of living more humanely—through music, art, ideas, and ordinary life. | active | `main` |
 | [root-sequence](https://github.com/Root-Sequence/root-sequence) | Independent interdisciplinary research exploring how intelligence, technology, and social systems shape one another. | active | `main` |
 | [root-sequence-discussions](https://github.com/Root-Sequence/root-sequence-discussions) | Central hub for organization-wide discussions, updates, planning, and cross-project coordination within root://sequence | active | `main` |
-| [universal-coherence-framework](https://github.com/Root-Sequence/universal-coherence-framework) | Exploratory framework for comparing how systems hold together or change; AI-assisted model under author review. | active | `main` |
+| [universal-coherence-framework](https://github.com/Root-Sequence/universal-coherence-framework) | Exploratory framework for comparing how systems hold together or change; exploratory model. | active | `main` |
 | [wiki](https://github.com/Root-Sequence/wiki) | A living map of Root Sequence ideas, language, projects, relationships, and canonical homes. | active | `main` |
 
 ## Why this is separate from the curated project map

@@ -61,3 +61,7 @@ Early public Root Sequence materials use the name alongside the Liberation Cycle
 The maintained explanation, historical relationship, scope, and limits live in [Why “Root Sequence”?](https://github.com/Root-Sequence/root-sequence/blob/main/concepts/root-sequence.md).
 
 The Wiki keeps the stable identity, aliases, provenance state, project relationship, and route to that canonical treatment.
+
+## Cumulative integration review route
+
+[Recursive integration reviews](https://github.com/Root-Sequence/root-sequence/tree/a2f6e5a2b47def5fba6a36b72ccfd3282180aafd/research/integration-reviews) connect existing concepts, contradictions and possible experiments through a dated review and coverage ledger. This is a research/navigation route, not a new governance layer or hierarchy over autonomous projects. The linked candidate remains a draft; private source material is excluded.
