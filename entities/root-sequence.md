@@ -64,4 +64,4 @@ The Wiki keeps the stable identity, aliases, provenance state, project relations
 
 ## Cumulative integration review route
 
-[Recursive integration reviews](https://github.com/Root-Sequence/root-sequence/tree/58fc7d694cc371bb57857d18f550ade40bb630bc/research/integration-reviews) connect existing concepts, contradictions and possible experiments through a dated review and coverage ledger. This is a research/navigation route, not a new governance layer or hierarchy over autonomous projects. The linked candidate remains a draft; private source material is excluded.
+[Recursive integration reviews](https://github.com/Root-Sequence/root-sequence/tree/a2f6e5a2b47def5fba6a36b72ccfd3282180aafd/research/integration-reviews) connect existing concepts, contradictions and possible experiments through a dated review and coverage ledger. This is a research/navigation route, not a new governance layer or hierarchy over autonomous projects. The linked candidate remains a draft; private source material is excluded.

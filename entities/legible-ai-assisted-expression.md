@@ -43,9 +43,9 @@ The principle therefore treats provenance as part of accessibility and authorshi
 
 ## Provenance
 
-Rae supplied the underlying framing and requested canonicalization on 2026-09-19 after a conversation about AI “showing its work,” writing as an expression bottleneck for some people, and AI helping externalize and organize thought. The compact sentence **“AI should reduce the cost of expression without reducing the visibility of thought”** does not appear verbatim in the visible source wording; it emerged through AI-assisted synthesis of that exchange.
+Rae supplied the underlying framing and requested canonicalization on 2026-09-19 after a conversation about AI “showing its work,” writing as an expression bottleneck for some people, and AI helping externalize and organize thought. The compact sentence **“AI should reduce the cost of expression without reducing the visibility of thought”** does not appear verbatim in the visible source wording; it emerged through synthesis of that exchange.
 
-The compact title **Legible AI-Assisted Expression**, the core sentence, and the detailed page structure were developed through back-and-forth AI-assisted synthesis during canonicalization. They are therefore recorded as `jointly-coined`, while the underlying ideas and examples remain attributable to their actual source material. No originality claim is made for the broader traditions of writing assistance, provenance, editorial disclosure, accessibility, or computer-supported authorship.
+The compact title **Legible AI-Assisted Expression**, the core sentence, and the detailed page structure were developed through back-and-forth synthesis during canonicalization. They are therefore recorded as `jointly-coined`, while the underlying ideas and examples remain attributable to their actual source material. No originality claim is made for the broader traditions of writing assistance, provenance, editorial disclosure, accessibility, or computer-supported authorship.
 
 ## Canonical substantive home
 

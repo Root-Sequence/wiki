@@ -42,3 +42,5 @@ The Wiki helps answer:
 - How has it changed over time?
 
 If you need the complete argument, design, implementation, or canon, follow the canonical project link from here.
+
+[Development record](WORK-RECORD.md)

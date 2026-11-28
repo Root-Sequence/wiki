@@ -31,7 +31,7 @@ The area deliberately separates experience from later report, memory, capability
 
 ## Current status
 
-`research/conscious-systems/` was merged to the public Root Sequence repository on September 22, 2026 as an **exploratory, AI-assisted research seed with author review pending**. The merge establishes a durable research-area home; it does not establish a validated theory, universal consciousness detector, medical standard, claim about any present artificial system, or completed experiment.
+`research/conscious-systems/` was merged to the public Root Sequence repository on September 22, 2026 as an **exploratory research seed**. The merge establishes a durable research-area home; it does not establish a validated theory, universal consciousness detector, medical standard, claim about any present artificial system, or completed experiment.
 
 The current work is an agenda and evidence-audit process. It includes bounded questions, theory comparisons, definition stress tests, system-boundary analysis, experience/memory evidence distinctions, and methods-level source extraction. Documentation and repository checks support traceability; they do not validate the scientific conclusions.
 
@@ -57,7 +57,7 @@ A useful contribution can therefore be a sharper distinction, a source correctio
 
 ## Provenance and review boundary
 
-The research area's guiding question and whole-system intuition were recorded as coming from the initiating discussion. Follow-up distinctions concerning experience, memory, traces, the subconscious, dying, death, recoverability, developmental boundaries, and divided access were developed through author clarification and AI-assisted synthesis. The project structure, literature selection, theory mapping, source extraction, and proposed tests remain reviewable and should not be attributed as settled author conclusions.
+The research area's guiding question and whole-system intuition were recorded as coming from the initiating discussion. Follow-up distinctions concerning experience, memory, traces, the subconscious, dying, death, recoverability, developmental boundaries, and divided access were developed through author clarification and synthesis. The project structure, literature selection, theory mapping, source extraction, and proposed tests remain reviewable and should not be attributed as settled author conclusions.
 
 The phrase **Conscious Systems** is used here as the stable project identity; this Wiki entry does not claim historical originality for the phrase itself.
 
